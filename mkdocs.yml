@@ -27,6 +27,7 @@ nav:
   - Principles: https://1704audiolabs.github.io/
   - Home: index.md
   - One-sheet: one-sheet.md
+  - 3D model: 3d-model.md
   - Build:
       - Build guide: 01-build.md
       - Building plan: building-plan.md

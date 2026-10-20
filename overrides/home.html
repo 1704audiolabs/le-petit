@@ -1,6 +1,6 @@
-{#- Home page: the 1704 Audio Labs cover (photo + the Belief headline), then the page as usual.
+{#- Home page: the 1704 Audio Labs cover (photo + the project headline, the belief below), then the page as usual.
     Front matter of docs/index.md: template: home.html, cover_image, cover_alt, cover_kicker,
-    cover_links (list of [label, site path]). -#}
+    cover_title (may hold <i>), cover_links (list of [label, site path]). -#}
 {% extends "main.html" %}
 {% block hero %}
 <header class="oab-cover">
@@ -8,9 +8,9 @@
   <div class="oab-cover__shade"></div>
   <div class="oab-cover__body">
     <span class="oab-cover__kicker">{{ page.meta.cover_kicker }}</span>
-    <p class="oab-cover__title">There is no correct sound, only the endless, joyful search for <i>yours</i>.</p>
+    <p class="oab-cover__title">{{ page.meta.cover_title }}</p>
+    <a class="oab-cover__belief" href="https://1704audiolabs.github.io/">There is no correct sound, only the endless, joyful search for <i>yours</i>. <span>Principles →</span></a>
     <nav class="oab-cover__links" aria-label="Start here">
-      <a href="https://1704audiolabs.github.io/">Principles · 1704 Audio Labs</a>
       <a href="{{ 'one-sheet/' | url }}">The project on one page</a>
       {%- for label, href in page.meta.cover_links or [] %}
       <a href="{{ href | url }}">{{ label }}</a>

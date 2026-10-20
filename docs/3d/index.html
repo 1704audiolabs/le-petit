@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Le Petit in 3D</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  /* 1704 Audio Labs: warm paper and ink, terracotta accent */
+  --bg:#F4F2EE; --paper:#FBFAF6; --ink:#1A1A1A; --muted:#5A5752; --line:#CFCBC3;
+  --stage:#EAE6DF; --accent:#B4471C;
+  --f-display:"Instrument Serif",Georgia,serif;
+  --f-body:"IBM Plex Sans",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--f-body)}
+.wrap{max-width:1180px;margin:0 auto;padding:16px max(16px,env(safe-area-inset-left)) 24px;display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+h1{font:400 clamp(28px,4.4vw,40px)/1.05 var(--f-display);margin:0}
+.lede{margin:2px 0 0;color:var(--muted);font-size:14px;max-width:80ch}
+.stage{position:relative;min-width:0;background:var(--stage);border:1px solid var(--line);border-radius:4px;overflow:hidden;aspect-ratio:16/9;min-height:320px}
+.stage canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+.stage canvas:active{cursor:grabbing}
+.tip{position:absolute;pointer-events:none;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:6px 9px;font:500 12.5px var(--f-mono);max-width:280px}
+.tip small{display:block;font-weight:400;color:var(--muted);margin-top:2px}
+.hint{position:absolute;left:10px;bottom:8px;font:12px var(--f-mono);color:var(--muted);pointer-events:none}
+.rail{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:flex-start}
+.group{display:grid;gap:6px}
+.group>span{font:500 12px var(--f-mono);color:var(--muted)}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+button{font:500 13.5px var(--f-body);padding:7px 12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:3px;cursor:pointer}
+button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.key{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:4px 18px;font-size:13.5px;margin:0;padding:0;list-style:none}
+.key b{font:500 13px var(--f-mono)}
+.key em{font-style:normal;color:var(--muted)}
+.noscript{padding:24px;color:var(--muted)}
+/* embedded in the website: the page around it already has the title */
+body.embed header{display:none}
+body.embed .wrap{padding:0 0 8px}
+/* screenshot mode: just the stage */
+body.shot .wrap{max-width:none;padding:0}
+body.shot header,body.shot .rail,body.shot .key,body.shot .hint{display:none}
+body.shot .stage{border:0;border-radius:0;aspect-ratio:auto;height:100vh}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Le Petit — as built</h1>
+    <p class="lede">Jean Hiraga's Le Petit from 22 mm OSB, to scale: biscuit-jointed carcass, the doubler on the front, the 175 mm port, fleece and fill on the back panel.
+    Drag to turn, scroll or pinch to zoom, hover any part for its size. The views look inside; “Play bass” shows the cone and the air in the port.</p>
+  </header>
+
+  <div class="stage" id="stage">
+    <noscript><div class="noscript">The 3D model needs JavaScript.</div></noscript>
+    <div class="tip" id="tip" hidden></div>
+    <div class="hint">drag · zoom · hover</div>
+  </div>
+
+  <div class="rail">
+    <div class="group">
+      <span>View</span>
+      <div class="seg" role="group" aria-label="View">
+        <button data-v="closed" aria-pressed="true">Closed</button>
+        <button data-v="xray" aria-pressed="false">See-through</button>
+        <button data-v="side" aria-pressed="false">Cut: right half off</button>
+        <button data-v="explode" aria-pressed="false">Exploded</button>
+      </div>
+    </div>
+    <div class="group">
+      <span>Show</span>
+      <div class="seg">
+        <button id="t-pair" aria-pressed="true">Pair</button>
+        <button id="t-play" aria-pressed="false">Play bass</button>
+        <button id="t-damp" aria-pressed="true">Damping</button>
+      </div>
+    </div>
+  </div>
+
+  <ul class="key">
+    <li><b>Front</b> <em>530 × 340, over everything · Ø94 driver 115 below the top, Ø70 port 150 up</em></li>
+    <li><b>Sides</b> <em>530 × 210, between front and back</em></li>
+    <li><b>Top, bottom</b> <em>296 × 210, between the sides</em></li>
+    <li><b>Doubler</b> <em>300 × 300, flush with the bottom, Ø70</em></li>
+    <li><b>Port tube</b> <em>HT DN75, 131 inside · 22 + 22 + 131 = 175 · Fb ≈ 48 Hz</em></li>
+    <li><b>Back</b> <em>482 × 292, screwed to beech cleats 15 × 20</em></li>
+    <li><b>Damping</b> <em>one fleece layer 266 × 456 + a 50 g fill pocket at mid-height</em></li>
+    <li><b>Driver</b> <em>Aiyima 4″ full-range, 8 Ω</em></li>
+  </ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script>
+(function(){
+const q=new URLSearchParams(location.search);
+if(q.has('shot')) document.body.classList.add('shot');
+if(q.has('embed')) document.body.classList.add('embed');
+const stage=document.getElementById('stage'), tip=document.getElementById('tip');
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const renderer=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});
+renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+renderer.localClippingEnabled=true;
+stage.appendChild(renderer.domElement);
+const scene=new THREE.Scene();
+const camera=new THREE.PerspectiveCamera(32,16/9,10,30000);
+const controls=new THREE.OrbitControls(camera,renderer.domElement);
+controls.enableDamping=true; controls.dampingFactor=.08;
+controls.minDistance=300; controls.maxDistance=5000; controls.maxPolarAngle=Math.PI*0.52;
+
+scene.add(new THREE.HemisphereLight(0xffffff,0x8a8070,.75));
+const sun=new THREE.DirectionalLight(0xffffff,.75); sun.position.set(700,1400,1100); scene.add(sun);
+const fill=new THREE.DirectionalLight(0xffffff,.25); fill.position.set(-900,300,-600); scene.add(fill);
+
+// ---------- procedural OSB ----------
+function osbTexture(base,flake,seed0){
+  const c=document.createElement('canvas'); c.width=c.height=512; const g=c.getContext('2d');
+  g.fillStyle=base; g.fillRect(0,0,512,512);
+  let seed=seed0; const rnd=()=>{seed=(seed*16807)%2147483647; return seed/2147483647};
+  for(let i=0;i<900;i++){
+    const x=rnd()*512,y=rnd()*512,w=14+rnd()*46,h=4+rnd()*12,a=rnd()*Math.PI,l=rnd();
+    g.save(); g.translate(x,y); g.rotate(a);
+    g.fillStyle=`rgba(${flake[0]+l*40},${flake[1]+l*30},${flake[2]+l*20},${.25+rnd()*.35})`;
+    g.fillRect(-w/2,-h/2,w,h); g.restore();
+  }
+  const t=new THREE.CanvasTexture(c); t.wrapS=t.wrapT=THREE.RepeatWrapping; t.repeat.set(1/400,1/400); return t;
+}
+const osbTex=osbTexture('#d8bf9c',[170,128,80],11);     // the build is pale, sanded and clear-lacquered
+
+// ---------- materials, clipping ----------
+const planes={side:new THREE.Plane(new THREE.Vector3(-1,0,0),0)};
+const mats=[];
+function mat(o){const m=new THREE.MeshStandardMaterial(Object.assign({side:THREE.DoubleSide},o)); mats.push(m); return m;}
+const M={
+  osb:mat({map:osbTex,roughness:.85}),
+  beech:mat({color:0xd9b98a,roughness:.7}),
+  pipe:mat({color:0x8d9297,roughness:.55,metalness:.1}),
+  frame:mat({color:0x1d1e20,roughness:.6}),
+  surround:mat({color:0x26282b,roughness:.9}),
+  cone:mat({color:0xe3cf8a,roughness:.75}),
+  cap:mat({color:0xb07a5a,roughness:.3,metalness:.6}),
+  magnet:mat({color:0x2a2c2f,roughness:.4,metalness:.6}),
+  term:mat({color:0x8a1f12,roughness:.5}),
+  fleece:mat({color:0xefe8da,roughness:1,transparent:true,opacity:.92}),
+  air:mat({color:0x2f6383,roughness:.4,transparent:true,opacity:.35,depthWrite:false}),
+};
+
+// ---------- helpers ----------
+function uvBox(g,w,h,d){const uv=g.attributes.uv, dims=[[d,h],[d,h],[w,d],[w,d],[w,h],[w,h]];
+  for(let f=0;f<6;f++)for(let k=0;k<4;k++){const i=f*4+k;uv.setXY(i,uv.getX(i)*dims[f][0],uv.getY(i)*dims[f][1]);}uv.needsUpdate=true;return g;}
+function tag(o,name,info){o.userData={name,info};o.traverse(c=>{if(c!==o&&c.isMesh&&!c.userData.name)c.userData={name,info};});return o;}
+function box(parent,w,h,d,material,pos,name,info){
+  const m=new THREE.Mesh(uvBox(new THREE.BoxGeometry(w,h,d),w,h,d),material); m.position.set(...pos);
+  m.userData={name,info}; parent.add(m); return m;
+}
+// a plate in the (x, y) plane with round holes, from z = 0 to thick
+function plateZ(w,h,thick,holes){
+  const s=new THREE.Shape(); s.moveTo(-w/2,-h/2); s.lineTo(w/2,-h/2); s.lineTo(w/2,h/2); s.lineTo(-w/2,h/2); s.lineTo(-w/2,-h/2);
+  holes.forEach(([u,v,r])=>{const p=new THREE.Path(); p.absarc(u,v,r,0,Math.PI*2,true); s.holes.push(p);});
+  const g=new THREE.ExtrudeGeometry(s,{depth:thick,bevelEnabled:false,curveSegments:64});
+  const uv=g.attributes.uv; for(let i=0;i<uv.count;i++) uv.setXY(i,uv.getX(i)+w/2,uv.getY(i)+h/2); return g;
+}
+function ringZ(ro,ri,len){const s=new THREE.Shape();s.absarc(0,0,ro,0,Math.PI*2,false);const h=new THREE.Path();h.absarc(0,0,ri,0,Math.PI*2,true);s.holes.push(h);
+  return new THREE.ExtrudeGeometry(s,{depth:len,bevelEnabled:false,curveSegments:64});}
+function latheZ(pts,seg){const g=new THREE.LatheGeometry(pts.map(([r,z])=>new THREE.Vector2(r,z)),seg||64);g.rotateX(Math.PI/2);return g;}
+
+// ---------- Le Petit as built (dimensions as docs/building-plan.md) ----------
+const W=340,H=530,D=232,T=22, Y0=H/2, Zf=D/2;          // origin = box centre, +z = front
+const DRV_Y=Y0-115, DRV_CUT=47, PORT_Y=-Y0+150, PORT_R=35;
+const DBL=300, TUBE_OD=37.5, TUBE_ID=35.5, TUBE_L=131;
+const BACK_W=292, BACK_H=482, CLEAT_W=15, CLEAT_D=20, CLEAT_Z=-Zf+23;   // cleat face 23 from the rear edge
+const IW=W-2*T, IH=H-2*T;                                // 296 × 486 opening
+const FLOOR_IN=-Y0+T;
+
+const parts=[];                                          // {obj, home, ex} for the exploded view
+const ex=(o,v)=>parts.push({obj:o,home:o.position.clone(),ex:new THREE.Vector3(...v)});
+let driverMoving=null, airPlug=null, damping=null;
+
+function lePetit(full){
+  const g=new THREE.Group();
+  // front with the two holes, the driver and the port tube (screwed to its inside)
+  const front=new THREE.Group(); g.add(front);
+  const fp=new THREE.Mesh(plateZ(W,H,T,[[0,DRV_Y,DRV_CUT],[0,PORT_Y,PORT_R]]),M.osb); fp.position.z=Zf-T;
+  fp.userData={name:'Front',info:'530 × 340 × 22 · over everything · Ø94 driver 115 below the top, Ø70 port 150 above the bottom'}; front.add(fp);
+  const tube=new THREE.Mesh(ringZ(TUBE_OD,TUBE_ID,TUBE_L),M.pipe); tube.position.set(0,PORT_Y,Zf-T-TUBE_L);
+  tube.userData={name:'Port tube',info:'HT DN75, 131 mm inside the box, on four screwed flaps · 22 + 22 + 131 = 175 mm · Fb ≈ 48 Hz · 57 mm clear of the back'}; front.add(tube);
+  // driver: frame on the front face, cone moves along z
+  const drv=new THREE.Group(); drv.position.set(0,DRV_Y,Zf); front.add(drv);
+  const dinfo='Aiyima 4″ full-range, 8 Ω · in a Ø94 cutout, frame on the front face';
+  const dm=(geo,m,z)=>{const o=new THREE.Mesh(geo,m);o.position.z=z||0;o.userData={name:'Driver',info:dinfo};drv.add(o);return o;};
+  dm(ringZ(53,44,4),M.frame,0);
+  for(let i=0;i<4;i++){const a=Math.PI/4+i*Math.PI/2; const s=dm(new THREE.CylinderGeometry(2.6,2.6,1.5,12).rotateX(Math.PI/2),M.pipe,4.6); s.position.x=Math.cos(a)*49; s.position.y=Math.sin(a)*49;}
+  dm(latheZ([[44,-2],[40,-30],[22,-50]],48),M.frame);
+  dm(new THREE.CylinderGeometry(30,30,22,40).rotateX(Math.PI/2),M.magnet,-60);
+  const moving=new THREE.Group(); drv.add(moving);
+  const mv=(geo,m)=>{const o=new THREE.Mesh(geo,m);o.userData={name:'Driver cone',info:'Play bass: the cone pushes air out of the front, the port answers'};moving.add(o);return o;};
+  mv(latheZ([[44,3],[40,6.5],[36,3]],64),M.surround);
+  mv(latheZ([[36,3],[26,-8],[12,-20]],64),M.cone);
+  const cap=mv(new THREE.SphereGeometry(13,32,12,0,Math.PI*2,0,Math.PI*0.5).rotateX(Math.PI/2),M.cap); cap.position.z=-14;
+  if(full) driverMoving=moving;
+  if(full) ex(front,[0,0,260]);
+  // doubler on the front, flush with the bottom
+  const dbl=new THREE.Mesh(plateZ(DBL,DBL,T,[[0,0,PORT_R]]),M.osb); dbl.position.set(0,-Y0+DBL/2,Zf);
+  dbl.userData={name:'Doubler',info:'300 × 300 × 22 · flush with the bottom, 20 in from each side · Ø70 in line with the front'}; g.add(dbl);
+  if(full) ex(dbl,[0,0,420]);
+  // sides, top, bottom with their cleats
+  const sideZ=-T/2, sideD=D-T;                          // from the front's inside to the rear edge: 210
+  [-1,1].forEach(sx=>{
+    const s=new THREE.Group(); g.add(s);
+    box(s,T,H,sideD,M.osb,[sx*(W/2-T/2),0,sideZ],sx<0?'Left side':'Right side','530 × 210 × 22 · biscuits to the front (6) and to top and bottom (3 each)');
+    box(s,CLEAT_W,IH,CLEAT_D,M.beech,[sx*(IW/2-CLEAT_W/2),0,CLEAT_Z+CLEAT_D/2],'Cleat','beech 486 × 15 × 20 · face 23 from the rear edge · M4 inserts for the back');
+    if(full) ex(s,[sx*200,0,0]);
+  });
+  [-1,1].forEach(sy=>{
+    const s=new THREE.Group(); g.add(s);
+    box(s,IW,T,sideD,M.osb,[0,sy*(Y0-T/2),sideZ],sy>0?'Top':'Bottom','296 × 210 × 22 · between the sides');
+    box(s,IW-2*CLEAT_W,CLEAT_W,CLEAT_D,M.beech,[0,sy*(IH/2-CLEAT_W/2),CLEAT_Z+CLEAT_D/2],'Cleat','beech 266 × 15 × 20 · face 23 from the rear edge');
+    if(full) ex(s,[0,sy*200,0]);
+  });
+  // back with terminals, fleece and the fill pocket
+  const back=new THREE.Group(); g.add(back);
+  box(back,BACK_W,BACK_H,T,M.osb,[0,0,-Zf+T/2],'Back','482 × 292 × 22 · flush with the rear edge, 2 mm play · 16 × M4 into the cleats');
+  [-20,20].forEach(x=>{const t=new THREE.Mesh(new THREE.CylinderGeometry(6,6,16,20).rotateX(Math.PI/2),M.term);t.position.set(x,-BACK_H/2+92,-Zf-8);t.userData={name:'Terminals',info:'2 × Ø12, 40 apart, 92 up'};back.add(t);});
+  if(full){
+    damping=new THREE.Group(); back.add(damping);
+    box(damping,IW-2*CLEAT_W,IH-2*CLEAT_W,10,M.fleece,[0,0,-Zf+T+5],'Fleece','one layer of sheep\'s wool fleece ≈ 10 mm, ≈ 266 × 456, stapled to the back panel');
+    const pY=FLOOR_IN+240, pocket=box(damping,240,160,70,M.fleece,[0,pY,-Zf+T+10+35],'Fill pocket','fleece pocket ≈ 240 × 160 with 50 g loose polyester fill · 160–320 above the inner floor');
+    pocket.scale.set(1,1,1);
+    ex(back,[0,0,-280]);
+  }
+  return g;
+}
+
+const speaker=lePetit(true); scene.add(speaker);
+// the port air: a soft plug in the tube for "Play bass"
+airPlug=new THREE.Mesh(new THREE.CylinderGeometry(TUBE_ID-1,TUBE_ID-1,60,40).rotateX(Math.PI/2),M.air);
+airPlug.userData={name:'Air in the port',info:'the air mass in the 175 mm port resonates with the box at ≈ 48 Hz'};
+const plugHome=new THREE.Vector3(0,PORT_Y,Zf-T-TUBE_L/2+40); airPlug.position.copy(plugHome); airPlug.visible=false;
+const frontGroup=parts[0].obj; frontGroup.add(airPlug);
+
+const partner=lePetit(false); scene.add(partner);
+const PX=270;                                           // half the distance between the two boxes' centres
+speaker.position.x=PX; partner.position.x=-PX; speaker.rotation.y=-0.12; partner.rotation.y=0.12;
+
+// floor
+const floor=new THREE.Mesh(new THREE.PlaneGeometry(8000,8000),new THREE.MeshStandardMaterial({color:0x8a8478,roughness:1,transparent:true,opacity:.18}));
+floor.rotation.x=-Math.PI/2; floor.position.y=-Y0-0.5; scene.add(floor);
+
+// ---------- cameras ----------
+const CAM={pair:{pos:[700,420,1450],tgt:[0,-20,0]},solo:{pos:[640,300,820],tgt:[0,-30,0]},side:{pos:[980,260,420],tgt:[0,-30,-20]},explode:{pos:[1500,820,1700],tgt:[0,0,40]}};
+function frame(which){
+  const c=CAM[which], t=new THREE.Vector3(...c.tgt), p=new THREE.Vector3(...c.pos);
+  const asp=stage.clientWidth/Math.max(1,stage.clientHeight);       // narrow screens: step back so everything fits
+  if(asp<1.6) p.sub(t).multiplyScalar(Math.min(2.2,1.6/asp)).add(t);
+  camera.position.copy(p); controls.target.copy(t); controls.update();
+}
+
+// ---------- state ----------
+let view='closed', play=false, explodeT=0, explodeTarget=0, showPair=true;
+const bPair=document.getElementById('t-pair'), bDamp=document.getElementById('t-damp');
+function setPair(on,reframe){
+  showPair=on; partner.visible=on; bPair.setAttribute('aria-pressed',on);
+  speaker.position.x=on?PX:0; speaker.rotation.y=on?-0.12:0;
+  if(reframe) frame(on?'pair':'solo');
+}
+function applyView(v){
+  view=v;
+  document.querySelectorAll('[data-v]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v));
+  if((v==='side'||v==='explode')&&showPair) setPair(false,false);     // one box for the cut and the exploded view
+  const clip=v==='side'?[planes.side]:[];
+  mats.forEach(m=>{m.clippingPlanes=clip; m.needsUpdate=true;});
+  M.osb.transparent=v==='xray'; M.osb.opacity=v==='xray'?.22:1; M.osb.depthWrite=v!=='xray'; M.osb.needsUpdate=true;
+  explodeTarget=v==='explode'?1:0;
+  if(v==='explode') frame('explode'); else if(v==='side') frame('side'); else frame(showPair?'pair':'solo');
+}
+document.querySelectorAll('[data-v]').forEach(b=>b.addEventListener('click',()=>applyView(b.dataset.v)));
+bPair.addEventListener('click',()=>{const on=!showPair; if(on&&(view==='explode'||view==='side')) applyView('closed'); setPair(on,true);});
+const tg=(b,fn)=>b.addEventListener('click',()=>{const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);fn(on);});
+tg(document.getElementById('t-play'),on=>{play=on; airPlug.visible=on;});
+tg(bDamp,on=>damping.visible=on);
+
+// ---------- theme ----------
+function theme(){scene.background=new THREE.Color(css('--stage')||'#EAE6DF');}
+theme(); try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',theme);}catch(e){}
+
+// ---------- hover ----------
+const ray=new THREE.Raycaster(), mouse=new THREE.Vector2();
+function visible(o){while(o){if(!o.visible)return false;o=o.parent;}return true;}
+renderer.domElement.addEventListener('pointermove',e=>{
+  const r=renderer.domElement.getBoundingClientRect();
+  mouse.x=((e.clientX-r.left)/r.width)*2-1; mouse.y=-((e.clientY-r.top)/r.height)*2+1;
+  ray.setFromCamera(mouse,camera);
+  const hits=ray.intersectObjects(scene.children,true).filter(h=>{
+    const d=h.object.userData; if(!d||!d.name||!visible(h.object)) return false;
+    if(view==='side'&&planes.side.distanceToPoint(h.point)<0) return false;
+    if(view==='xray'&&h.object.material===M.osb) return false;
+    return true;});
+  if(!hits.length){tip.hidden=true;return;}
+  const d=hits[0].object.userData; tip.textContent='';
+  const b=document.createElement('div'); b.textContent=d.name; const s=document.createElement('small'); s.textContent=d.info; tip.append(b,s);
+  tip.hidden=false;
+  let x=e.clientX-r.left+14, y=e.clientY-r.top+14;
+  if(x>r.width-290) x=e.clientX-r.left-290; if(y>r.height-60) y=e.clientY-r.top-60;
+  tip.style.left=x+'px'; tip.style.top=y+'px';
+});
+renderer.domElement.addEventListener('pointerleave',()=>tip.hidden=true);
+
+// ---------- loop ----------
+function resize(){const w=stage.clientWidth,h=stage.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
+new ResizeObserver(resize).observe(stage); resize();
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+let t0=performance.now();
+function tick(now){
+  const dt=Math.min(.05,(now-t0)/1000); t0=now;
+  explodeT+=(explodeTarget-explodeT)*Math.min(1,dt*(reduce?60:6));
+  parts.forEach(p=>p.obj.position.copy(p.home).addScaledVector(p.ex,explodeT));
+  // 1.2 Hz so it can be seen; near Fb the port air moves far more than the cone, and against it
+  const s=play?Math.sin(now/1000*2*Math.PI*1.2):0;
+  driverMoving.position.z=s*4;
+  airPlug.position.z=plugHome.z-s*30;
+  controls.update(); renderer.render(scene,camera); requestAnimationFrame(tick);
+}
+// URL options for links and screenshots: ?view=xray|side|explode&pair=0&play=1&cam=solo
+setPair(q.get('pair')!=='0',false);
+applyView(q.get('view')||'closed');
+if(q.get('cam')) frame(q.get('cam'));
+if(q.get('view')==='explode'){explodeT=1;}
+if(q.get('play')==='1'){play=true; airPlug.visible=true; document.getElementById('t-play').setAttribute('aria-pressed','true');}
+requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>

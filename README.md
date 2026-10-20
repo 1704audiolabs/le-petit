@@ -21,7 +21,7 @@ part of **[1704 Audio Labs](https://1704audiolabs.github.io/)** — Measure & Ta
 
 ## Contents
 
-[The result](#the-result) · [Build it](#build-it) · [Port tube](#port-tube) · [Damping](#damping) ·
+[The result](#the-result) · [3D model](#3d-model) · [Build it](#build-it) · [Port tube](#port-tube) · [Damping](#damping) ·
 [The driver](#the-driver-aiyima-instead-of-fostex) · [How it was measured](#how-it-was-measured) ·
 [What I'd do differently](#what-id-do-differently) · [Repository map](#repository-map) ·
 [Credits](#credits-and-license)
@@ -47,6 +47,15 @@ port. Below 400 Hz the near-field driver + port sum, above it the time-gated far
 It doesn't sound like *more* bass — it sounds **more balanced**: the boom that read as "lots of
 bass" is spread evenly down to 47 Hz. The two treble peaks at ~6 and ~10.5 kHz remain; EQ them to
 taste.
+
+## 3D model
+
+Turn it, look inside, cut it open, explode it, play the bass — **[open the 3D model](https://1704audiolabs.github.io/le-petit/3d-model/)**.
+
+| | | |
+| --- | --- | --- |
+| [![See-through: the driver, the port tube, the cleats, the fleece and the fill pocket in place](docs/assets/3d/see-through.png)](https://1704audiolabs.github.io/le-petit/3d-model/) | [![Cut open: 22 + 22 + 131 = 175 mm of port, the fill pocket at mid-height, the fleece on the back](docs/assets/3d/cut-open.png)](https://1704audiolabs.github.io/le-petit/3d-model/) | [![Exploded: front over everything, sides between, top and bottom between those, the back on its cleats](docs/assets/3d/exploded.png)](https://1704audiolabs.github.io/le-petit/3d-model/) |
+| see-through | cut open | exploded |
 
 ## Build it
 
@@ -191,6 +200,7 @@ repeatability checked to 0.1–0.3 dB.
 ```
 docs/
 ├── one-sheet.md             the whole project on one A4 page
+├── 3d/index.html            the interactive 3D model (three.js), as built
 ├── 01-build.md              build guide, 14 steps, parts list, cutting plan
 ├── building-plan.md         the building plan: drawings, cut list, holes, joints, assembly
 ├── 02-measurement-rig.md    equipment, signal chain, microphone positions
@@ -203,7 +213,10 @@ docs/
 ├── plans/                   building-plan sheets and cutting plan (SVG) + their generator scripts
 ├── data/csv/                every measurement as CSV
 ├── data/                    raw recordings (.npz) and overview plots
-└── assets/                  photos, charts, diagrams, site styles
+└── assets/                  photos, charts, diagrams, 3D stills, site styles
+tools/
+├── shoot_3d.py              stills of the 3D model for this README
+└── svg2png.py               PNG previews of the plan sheets (headless Chrome)
 overrides/                   page templates: home cover, one-sheet
 ```
 

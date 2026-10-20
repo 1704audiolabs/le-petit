@@ -3,7 +3,9 @@ template: home.html
 cover_image: assets/photos/pair-front.jpg
 cover_alt: The finished Le Petit pair in OSB
 cover_kicker: 01 · Le Petit
+cover_title: "One sheet of OSB, a drain pipe and garden fleece — <i>flat within ±1 dB from 55 to 150 Hz.</i>"
 cover_links:
+  - [3D model, 3d-model/]
   - [Build guide, 01-build/]
   - [Building plan, building-plan/]
   - [Results, 06-step-2-port-tube/]
@@ -39,7 +41,7 @@ part of **[1704 Audio Labs](https://1704audiolabs.github.io/)** — Measure & Ta
 
 ## Contents
 
-[The result](#the-result) · [Build it](#build-it) · [Port tube](#port-tube) · [Damping](#damping) ·
+[The result](#the-result) · [3D model](#3d-model) · [Build it](#build-it) · [Port tube](#port-tube) · [Damping](#damping) ·
 [The driver](#the-driver-aiyima-instead-of-fostex) · [How it was measured](#how-it-was-measured) ·
 [What I'd do differently](#what-id-do-differently) · [Repository map](#repository-map) ·
 [Credits](#credits-and-license)
@@ -85,6 +87,15 @@ after step 2.
 </div>
 
 The two treble peaks at ~6 and ~10.5 kHz remain; EQ them to taste.
+
+## 3D model
+
+Turn it, look inside, cut it open, explode it, play the bass — **[open the 3D model](3d-model.md)**.
+
+| | | |
+| --- | --- | --- |
+| [![See-through: the driver, the port tube, the cleats, the fleece and the fill pocket in place](assets/3d/see-through.png)](3d-model.md) | [![Cut open: 22 + 22 + 131 = 175 mm of port, the fill pocket at mid-height, the fleece on the back](assets/3d/cut-open.png)](3d-model.md) | [![Exploded: front over everything, sides between, top and bottom between those, the back on its cleats](assets/3d/exploded.png)](3d-model.md) |
+| see-through | cut open | exploded |
 
 ## Build it
 
@@ -229,6 +240,7 @@ repeatability checked to 0.1–0.3 dB.
 ```
 docs/
 ├── one-sheet.md             the whole project on one A4 page
+├── 3d/index.html            the interactive 3D model (three.js), as built
 ├── 01-build.md              build guide, 14 steps, parts list, cutting plan
 ├── building-plan.md         the building plan: drawings, cut list, holes, joints, assembly
 ├── 02-measurement-rig.md    equipment, signal chain, microphone positions
@@ -241,7 +253,10 @@ docs/
 ├── plans/                   building-plan sheets and cutting plan (SVG) + their generator scripts
 ├── data/csv/                every measurement as CSV
 ├── data/                    raw recordings (.npz) and overview plots
-└── assets/                  photos, charts, diagrams, site styles
+└── assets/                  photos, charts, diagrams, 3D stills, site styles
+tools/
+├── shoot_3d.py              stills of the 3D model for this README
+└── svg2png.py               PNG previews of the plan sheets (headless Chrome)
 overrides/                   page templates: home cover, one-sheet
 ```
 
