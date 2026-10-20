@@ -1,28 +1,19 @@
 ---
 template: one-sheet.html
 title: Le Petit on one page
-description: The belief behind the project, and Le Petit on one A4 page — flat within ±1 dB from 55 to 150 Hz, from one sheet of OSB, a drain pipe and garden fleece.
+description: Le Petit on one A4 page — flat within ±1 dB from 55 to 150 Hz, from one sheet of OSB, a drain pipe and garden fleece.
 sheet_label: One-sheet — Le Petit
 ---
 
 <header class="mast"><span class="wordmark">1704 Audio Labs</span><span>01 · Le Petit</span><span>October 2026</span></header>
-<section class="belief" aria-label="Belief">
-<span class="lab">Belief</span>
-<h1 class="belief__title">There is no correct sound, only the endless, joyful search for <i>yours</i>.</h1>
-<p class="belief__text">Recordings are mixed by people, in rooms, to taste. Playback can never be a window onto an original you were never part of, so the goal is not fidelity but finding what you love, for the music and the moment you are in.</p>
-</section>
-<section class="grid principles" aria-label="Principles of sound exploration">
-<span></span><span class="col col--p">Precision</span><span class="col col--c">Character</span>
-<div class="row"><b>Foundation</b><span>what makes it possible</span></div>
-<div class="cell tint-p"><b>Technical freedom</b><span>DSP and affordable class D amps make every speaker reconfigurable. Crossovers, EQ and voicings change in software, so you are never locked in.</span></div>
-<div class="cell tint-c"><b>Physical palette</b><span>Box, open baffle, horn and subwoofer move air in physically different ways. Built as cheap DIY, they form a palette to combine, even in unusual ways. The room is part of the instrument.</span></div>
-<div class="row"><b>Way of working</b><span>how to use it</span></div>
-<div class="cell tint-p"><b>Measure to understand</b><span>A calibrated microphone and real data make every experiment deliberate. Compare level-matched, because louder always sounds better.</span></div>
-<div class="cell tint-c"><b>Taste decides</b><span>No dogma. EQ, presets and voicings for different music or moods are legitimate. Changing your mind is part of the game.</span></div>
-</section>
-<section class="turn" aria-label="Applied">
-<span class="lab">Applied · 01 Le Petit, after Jean Hiraga</span>
-<h2 class="turn__title">One sheet of OSB, a drain pipe and garden fleece — <i>flat within ±1 dB from 55 to 150 Hz.</i></h2>
+<section class="cover" aria-label="Le Petit">
+<img src="../assets/photos/pair-front.jpg" alt="The finished Le Petit pair in OSB">
+<div class="cover__body">
+<span class="cover__kicker">01 · after Jean Hiraga, 1983</span>
+<h1 class="cover__name">Le Petit</h1>
+<p class="cover__finding">One sheet of OSB, a drain pipe and garden fleece — <i>flat within ±1 dB from 55 to 150 Hz.</i></p>
+<p class="cover__claim"><b>Measure &amp; Taste</b> · There is no correct sound, only the endless, joyful search for <i>yours</i>. <a href="https://1704audiolabs.github.io/">Principles of sound exploration →</a></p>
+</div>
 </section>
 <section class="grid applied" aria-label="Le Petit, measured and heard">
 <span></span><span class="col col--p">Precision · measured</span><span class="col col--c">Character · heard</span>
@@ -34,7 +25,7 @@ sheet_label: One-sheet — Le Petit
 <p><strong>27.0 l</strong><span>inside, 530 × 340 × 232 mm box</span></p>
 </div>
 <div class="cell plates">
-<figure class="plate"><img src="../assets/photos/pair-front.jpg" alt="The finished pair in oriented strand board"><span class="plate__meta"><span>01</span><span>DIY store</span></span><span class="plate__title">Oriented strand board</span><span class="plate__text">One 2000 × 1000 mm board, 22 mm, for the pair.</span></figure>
+<figure class="plate"><img class="crop-floor" src="../assets/photos/tube-mounted-inside.jpg" alt="Oriented strand board: the inside of the box"><span class="plate__meta"><span>01</span><span>DIY store</span></span><span class="plate__title">Oriented strand board</span><span class="plate__text">One 2000 × 1000 mm board, 22 mm, for the pair.</span></figure>
 <figure class="plate"><img src="../assets/photos/ht-dn75-pipe.jpg" alt="The HT DN75 drain pipe used as the port tube"><span class="plate__meta"><span>02</span><span>Plumbing aisle</span></span><span class="plate__title">HT DN75 drain pipe</span><span class="plate__text">175 mm total port, tunes the box to ≈ 48 Hz.</span></figure>
 <figure class="plate"><img src="../assets/photos/damping-L-09-pocket-50g.jpg" alt="Sheep's wool garden fleece and the fill pocket on the back panel"><span class="plate__meta"><span>03</span><span>Garden centre</span></span><span class="plate__title">Sheep's wool fleece</span><span class="plate__text">Sold as a mulch mat; one sheet per speaker.</span></figure>
 </div>

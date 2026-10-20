@@ -21,11 +21,11 @@ All files, drawings and data: **https://github.com/1704audiolabs/le-petit** ·
 part of **[1704 Audio Labs](https://1704audiolabs.github.io/)** — Measure & Taste
 
 <div class="oab-onesheet" markdown>
-[![The one-sheet: belief, principles and Le Petit on one A4 page](assets/one-sheet.png)](one-sheet.md)
+[![The one-sheet: Le Petit on one A4 page](assets/one-sheet.png)](one-sheet.md)
 <div markdown>
 <span class="oab-label">One-sheet · A4</span>
 
-**The whole project on one page** — the belief behind it, what was measured and what was heard.
+**The whole project on one page** — what was measured, what was heard and how to build it.
 [Open the one-sheet →](one-sheet.md)
 </div>
 </div>

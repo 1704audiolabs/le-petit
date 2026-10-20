@@ -6,6 +6,7 @@
   --graphite: #3A3732; --reference: #8A857C; --ink: #1A1A1A; --walnut: #1E1C19; --on-dark: #F4F2EE;
   --precision: #2F6383; --precision-deep: #174257; --precision-tint: #E3EAF0;
   --character: #B4471C; --character-deep: #7A3410; --character-tint: #F5E3D7;
+  --on-dark-muted: #D8D2C6; --character-on-dark: #E8936A;
   --display: "Instrument Serif", Georgia, serif; --text: "IBM Plex Sans", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
 }
@@ -36,13 +37,27 @@ a:hover { color: var(--character); }
   font-size: calc(9.5 * var(--u)); color: var(--graphite); }
 .mast .wordmark { font-weight: 500; color: var(--ink); }
 
-/* belief */
-.belief { display: flex; flex-direction: column; gap: calc(5 * var(--u)); }
-.belief__title { font-family: var(--display); font-weight: 400; font-size: calc(34 * var(--u)); line-height: 1;
-  letter-spacing: -.01em; max-width: calc(660 * var(--u)); text-wrap: balance; }
-.belief__text { font-size: calc(11 * var(--u)); line-height: 1.5; color: var(--graphite); max-width: calc(640 * var(--u)); text-wrap: pretty; }
+/* cover band: photo + the project's name and finding, the claim and the link to the principles on the hub.
+   It takes up the height the project and the footer leave, like the website's cover. */
+.cover { position: relative; flex: 1 1 auto; min-height: calc(300 * var(--u)); border-radius: 4px; overflow: hidden;
+  background: var(--walnut); color: var(--on-dark); display: flex; flex-direction: column; justify-content: flex-end; }
+.cover img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .62; }
+.cover::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(30,28,25,.35) 0%,
+  rgba(30,28,25,0) 28%, rgba(30,28,25,.25) 50%, rgba(30,28,25,.92) 100%); }
+.cover__body { position: relative; display: flex; flex-direction: column; gap: calc(6 * var(--u));
+  padding: calc(20 * var(--u)) calc(24 * var(--u)) calc(18 * var(--u)); }
+.cover__kicker { font-family: var(--mono); font-size: calc(9.5 * var(--u)); color: var(--on-dark-muted); }
+.cover__name { font-family: var(--display); font-weight: 400; font-size: calc(64 * var(--u)); line-height: .95;
+  letter-spacing: -.01em; }
+.cover__finding { font-family: var(--display); font-size: calc(22 * var(--u)); line-height: 1.08; max-width: calc(600 * var(--u));
+  text-wrap: balance; }
+.cover__claim { font-size: calc(10 * var(--u)); line-height: 1.45; color: var(--on-dark-muted); padding-top: calc(6 * var(--u));
+  border-top: 1px solid rgba(244,242,238,.35); }
+.cover__claim b { font-weight: 600; color: var(--on-dark); }
+.cover__claim a { color: var(--on-dark); text-decoration-color: var(--character-on-dark); white-space: nowrap; }
+.cover__claim a:hover { color: var(--character-on-dark); }
 
-/* the 2 x 2 grids: principles above, the project below, same columns */
+/* the project's 2 x 2 grid: the principles' columns and rows, filled with evidence */
 .grid { display: grid; grid-template-columns: calc(96 * var(--u)) minmax(0, 1fr) minmax(0, 1fr);
   gap: calc(6 * var(--u)) calc(8 * var(--u)); }
 .col { font-family: var(--mono); font-size: calc(9.5 * var(--u)); font-weight: 600; padding: 0 0 calc(1 * var(--u)); }
@@ -54,14 +69,6 @@ a:hover { color: var(--character); }
   gap: calc(4 * var(--u)); min-width: 0; }
 .tint-p { background: var(--precision-tint); color: var(--precision-deep); }
 .tint-c { background: var(--character-tint); color: var(--character-deep); }
-.principles .cell b { font-weight: 500; font-size: calc(12.5 * var(--u)); line-height: 1.2; }
-.principles .cell span { font-size: calc(9.6 * var(--u)); line-height: 1.38; text-wrap: pretty; }
-
-/* the turn to the project */
-.turn { display: flex; flex-direction: column; gap: calc(4 * var(--u)); padding-top: calc(9 * var(--u));
-  border-top: 1px solid var(--ink); }
-.turn__title { font-family: var(--display); font-weight: 400; font-size: calc(25 * var(--u)); line-height: 1.04;
-  text-wrap: balance; max-width: calc(714 * var(--u)); }
 
 /* key figures */
 .figures { gap: calc(6 * var(--u)); justify-content: space-between; }
@@ -75,6 +82,7 @@ a:hover { color: var(--character); }
 .plates { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(8 * var(--u)); padding: 0; }
 .plate { margin: 0; display: flex; flex-direction: column; gap: calc(3 * var(--u)); min-width: 0; }
 .plate img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; display: block; background: var(--walnut); }
+.plate img.crop-floor { object-position: 50% 92%; }
 .plate__meta { display: flex; justify-content: space-between; gap: calc(4 * var(--u)); font-family: var(--mono);
   font-size: calc(7.5 * var(--u)); white-space: nowrap; color: var(--pencil); padding-top: calc(2 * var(--u)); }
 .plate__meta span:last-child { color: var(--character); text-align: right; }
@@ -131,7 +139,10 @@ a:hover { color: var(--character); }
 @media (max-width: 700px) {
   .wrap { width: 100%; margin: 12px 0 32px; }
   .sheet { --u: 1.3px; width: 100%; aspect-ratio: auto; overflow: visible; padding: 24px 16px; gap: 22px; }
-  .belief__title { font-size: 40px; }
+  .cover { min-height: 420px; }
+  .cover__name { font-size: 48px; }
+  .cover__finding { font-size: 22px; }
+  .cover__claim { font-size: 13px; }
   .grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .grid > span:first-child { display: none; }
   .row { grid-column: 1 / -1; padding-top: 8px; }
