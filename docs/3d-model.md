@@ -1,7 +1,7 @@
 # 3D model
 
 Le Petit as built, to scale: 22 mm OSB with biscuit joints, the doubler on the front, the 175 mm
-port, the fleece and the fill pocket on the back panel. Drag to turn, scroll or pinch to zoom, hover
+port, the fleece and the fill pocket on the back panel, on the Ø 6 mm steel [stand](stand.md). Drag to turn, scroll or pinch to zoom, hover
 any part for its size. **See-through**, the **cut** and **Exploded** show the inside; **Play bass**
 moves the cone and the air in the port.
 
@@ -12,10 +12,10 @@ moves the cone and the air in the port.
 
 | View | What you see |
 | --- | --- |
-| **Closed** | the pair as built: driver 115 below the top, the doubler with the port flush with the bottom |
+| **Closed** | the pair as built, on their stands: driver 115 below the top (715 above the floor), the doubler with the port flush with the bottom |
 | **See-through** | the OSB turns translucent: driver, port tube, cleats, fleece and fill pocket in place |
 | **Cut: right half off** | the section through driver and port: 22 + 22 + 131 = 175 mm of port, 57 mm clear of the back |
-| **Exploded** | how the panels go together: front over everything, sides between, top and bottom between those, the back on its cleats |
+| **Exploded** | how the panels go together: front over everything, sides between, top and bottom between those, the back on its cleats, the stand below |
 | **Play bass** | the cone and the air in the port; near the tuning (≈ 48 Hz) the port air moves much further than the cone |
 
 The model uses the same dimensions as the [building plan](building-plan.md).

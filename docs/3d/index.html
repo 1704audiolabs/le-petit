@@ -48,7 +48,7 @@ body.shot .stage{border:0;border-radius:0;aspect-ratio:auto;height:100vh}
 <div class="wrap">
   <header>
     <h1>Le Petit — as built</h1>
-    <p class="lede">Jean Hiraga's Le Petit from 22 mm OSB, to scale: biscuit-jointed carcass, the doubler on the front, the 175 mm port, fleece and fill on the back panel.
+    <p class="lede">Jean Hiraga's Le Petit from 22 mm OSB, to scale: biscuit-jointed carcass, the doubler on the front, the 175 mm port, fleece and fill on the back panel, on its Ø6 steel stand.
     Drag to turn, scroll or pinch to zoom, hover any part for its size. The views look inside; “Play bass” shows the cone and the air in the port.</p>
   </header>
 
@@ -87,6 +87,7 @@ body.shot .stage{border:0;border-radius:0;aspect-ratio:auto;height:100vh}
     <li><b>Back</b> <em>482 × 292, screwed to beech cleats 15 × 20</em></li>
     <li><b>Damping</b> <em>one fleece layer 266 × 456 + a 50 g fill pocket at mid-height</em></li>
     <li><b>Driver</b> <em>Aiyima 4″ full-range, 8 Ω</em></li>
+    <li><b>Stand</b> <em>Ø6 round steel, 300 high, H of bars at 60 · driver centre at 715</em></li>
   </ul>
 </div>
 
@@ -144,6 +145,7 @@ const M={
   term:mat({color:0x8a1f12,roughness:.5}),
   fleece:mat({color:0xefe8da,roughness:1,transparent:true,opacity:.92}),
   air:mat({color:0x2f6383,roughness:.4,transparent:true,opacity:.35,depthWrite:false}),
+  steel:mat({color:0x3a3d41,roughness:.35,metalness:.75}),
 };
 
 // ---------- helpers ----------
@@ -168,6 +170,7 @@ function latheZ(pts,seg){const g=new THREE.LatheGeometry(pts.map(([r,z])=>new TH
 // ---------- Le Petit as built (dimensions as docs/building-plan.md) ----------
 const W=340,H=530,D=232,T=22, Y0=H/2, Zf=D/2;          // origin = box centre, +z = front
 const DRV_Y=Y0-115, DRV_CUT=47, PORT_Y=-Y0+150, PORT_R=35;
+const STAND=300;                                         // stand height: driver centre 715 above the floor
 const DBL=300, TUBE_OD=37.5, TUBE_ID=35.5, TUBE_L=131;
 const BACK_W=292, BACK_H=482, CLEAT_W=15, CLEAT_D=20, CLEAT_Z=-Zf+23;   // cleat face 23 from the rear edge
 const IW=W-2*T, IH=H-2*T;                                // 296 × 486 opening
@@ -229,6 +232,17 @@ function lePetit(full){
     pocket.scale.set(1,1,1);
     ex(back,[0,0,-280]);
   }
+  // the stand: Ø6 round steel, legs 300 into M6 inserts 22 from the outside faces, an H of bars 60 above the floor
+  const st=new THREE.Group(); g.add(st);
+  const SX=W/2-22, SZ=Zf-22, R=3, base=-Y0-STAND;
+  const rod=(len,axis,pos,name,info)=>{const geo=new THREE.CylinderGeometry(R,R,len,16);
+    if(axis==='x') geo.rotateZ(Math.PI/2); if(axis==='z') geo.rotateX(Math.PI/2);
+    const m=new THREE.Mesh(geo,M.steel); m.position.set(...pos); m.userData={name,info}; st.add(m); return m;};
+  [-1,1].forEach(sx=>[-1,1].forEach(sz=>rod(STAND,'y',[sx*SX,base+STAND/2,sz*SZ],'Stand leg',
+    'Ø6 bright round steel · 300 visible + 11 thread · M6 into a glued-in insert, 22 from the outside faces (296 × 188)')));
+  [-1,1].forEach(sx=>rod(2*SZ,'z',[sx*SX,base+60,0],'Stand side bar','Ø6 · 188 on the axes, 182 cut · silver-soldered, 60 above the floor'));
+  rod(2*SX,'x',[0,base+60,0],'Stand middle bar','Ø6 · 296 on the axes, 290 cut · joins the side bars at their middle');
+  if(full) ex(st,[0,-460,0]);
   return g;
 }
 
@@ -245,10 +259,10 @@ speaker.position.x=PX; partner.position.x=-PX; speaker.rotation.y=-0.12; partner
 
 // floor
 const floor=new THREE.Mesh(new THREE.PlaneGeometry(8000,8000),new THREE.MeshStandardMaterial({color:0x8a8478,roughness:1,transparent:true,opacity:.18}));
-floor.rotation.x=-Math.PI/2; floor.position.y=-Y0-0.5; scene.add(floor);
+floor.rotation.x=-Math.PI/2; floor.position.y=-Y0-STAND-0.5; scene.add(floor);
 
 // ---------- cameras ----------
-const CAM={pair:{pos:[700,420,1450],tgt:[0,-20,0]},solo:{pos:[640,300,820],tgt:[0,-30,0]},side:{pos:[980,260,420],tgt:[0,-30,-20]},explode:{pos:[1500,820,1700],tgt:[0,0,40]}};
+const CAM={pair:{pos:[820,330,1850],tgt:[0,-160,0]},solo:{pos:[760,230,1150],tgt:[0,-170,0]},side:{pos:[1500,160,640],tgt:[0,-130,-20]},explode:{pos:[1900,760,2350],tgt:[0,-230,40]}};
 function frame(which){
   const c=CAM[which], t=new THREE.Vector3(...c.tgt), p=new THREE.Vector3(...c.pos);
   const asp=stage.clientWidth/Math.max(1,stage.clientHeight);       // narrow screens: step back so everything fits

@@ -37,6 +37,8 @@ size to print at any scale.
 
 ![Damping layout to scale: one fleece layer ≈ 266 × 456 on the back panel, a pocket ≈ 240 × 160 with 50 g polyester fill, 160–320 mm above the inner floor](assets/diagrams/damping-layout.svg)
 
+The steel stand has its own sheet: [Stand](stand.md).
+
 ## Dimensions
 
 | | Size |

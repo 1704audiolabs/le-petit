@@ -21,7 +21,7 @@ part of **[1704 Audio Labs](https://1704audiolabs.github.io/)** — Measure & Ta
 
 ## Contents
 
-[The result](#the-result) · [3D model](#3d-model) · [Build it](#build-it) · [Port tube](#port-tube) · [Damping](#damping) ·
+[The result](#the-result) · [3D model](#3d-model) · [Build it](#build-it) · [Port tube](#port-tube) · [Damping](#damping) · [Stand](#stand) ·
 [The driver](#the-driver-aiyima-instead-of-fostex) · [How it was measured](#how-it-was-measured) ·
 [What I'd do differently](#what-id-do-differently) · [Repository map](#repository-map) ·
 [Credits](#credits-and-license)
@@ -148,6 +148,15 @@ Damping only works where the air moves. **The layout that came out of eight meas
 One sheet of fleece per speaker, all on the back panel, about −5 to −6 dB on every resonance, direct sound
 unchanged. All eight variants: [Step 1 — Damping](docs/05-step-1-damping.md).
 
+## Stand
+
+Four legs and an H of bars in Ø 6 mm bright round steel, silver-soldered, 300 mm high; the legs screw
+into M6 inserts glued into the box bottom. The driver sits at 715 mm.
+
+[![The stand sheet: views with the box, plan, leg detail, cut list and cutting plan](docs/plans/stand-plan.png)](docs/stand.md)
+
+Cut list, hardware and the build steps: **[Stand](docs/stand.md)** · drawn by [make_stand_plan.py](docs/plans/make_stand_plan.py)
+
 ## The driver: Aiyima instead of Fostex
 
 | | Original plan (FE103NV2) | This build (Aiyima 4″, 8 Ω) |
@@ -159,7 +168,8 @@ unchanged. All eight variants: [Step 1 — Damping](docs/05-step-1-damping.md).
 
 **The driver changes the port tuning, not the damping.** Note: the datasheet shipped with the
 Aiyima (Re 3.4 Ω, Fs 73 Hz, Qts 0.52) is for the 4 Ω version; the impedance measurement showed the
-8 Ω version. More: [Aiyima vs. FE103NV2](docs/07-aiyima-vs-fe103.md).
+8 Ω version. Everything known about the driver — the listing, the manufacturer's lab sheet, what was
+measured: [Driver](docs/driver.md). More: [Aiyima vs. FE103NV2](docs/07-aiyima-vs-fe103.md).
 
 ## How it was measured
 
@@ -203,6 +213,8 @@ docs/
 ├── 3d/index.html            the interactive 3D model (three.js), as built
 ├── 01-build.md              build guide, 14 steps, parts list, cutting plan
 ├── building-plan.md         the building plan: drawings, cut list, holes, joints, assembly
+├── stand.md                 the steel stand: drawing, cut list, hardware, steps
+├── driver.md                the Aiyima 4″: listing, lab sheet (T/S), measured values
 ├── 02-measurement-rig.md    equipment, signal chain, microphone positions
 ├── 03-impedance-jig.md      the 50 Ω jig: parts, wiring, calibration, verification
 ├── 04-method.md             sweeps, windows, near-field sum, impedance estimator
@@ -210,7 +222,7 @@ docs/
 ├── 06-step-2-port-tube.md   port tuning from 72 to 48 Hz, result, listening test
 ├── 07-aiyima-vs-fe103.md    what changes with the Aiyima driver
 ├── 08-lessons.md            recommendations and conclusions
-├── plans/                   building-plan sheets and cutting plan (SVG) + their generator scripts
+├── plans/                   building-plan sheets, stand sheet and cutting plan (SVG) + their generator scripts
 ├── data/csv/                every measurement as CSV
 ├── data/                    raw recordings (.npz) and overview plots
 └── assets/                  photos, charts, diagrams, 3D stills, site styles

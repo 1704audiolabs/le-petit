@@ -31,6 +31,8 @@ nav:
   - Build:
       - Build guide: 01-build.md
       - Building plan: building-plan.md
+      - Stand: stand.md
+      - Driver: driver.md
   - Results:
       - "Step 1 — Damping": 05-step-1-damping.md
       - "Step 2 — Port tube": 06-step-2-port-tube.md
