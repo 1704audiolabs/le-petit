@@ -1,7 +1,7 @@
 # Le Petit
 
-**Jean Hiraga's Le Petit from a single sheet of OSB, with an affordable Aiyima 4″ full-range driver —
-built from one sheet of OSB and tuned by measurement, one change at a time.**
+**Jean Hiraga's Le Petit from a single sheet of OSB, with an affordable Aiyima 4″ full-range driver,
+tuned by measurement, one change at a time.**
 
 Also readable as a website: **https://1704audiolabs.github.io/le-petit/** · the whole project on one page: **[one-sheet](https://1704audiolabs.github.io/le-petit/one-sheet/)** ·
 part of **[1704 Audio Labs](https://1704audiolabs.github.io/)** — Measure & Taste
