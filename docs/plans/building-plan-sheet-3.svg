@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&amp;family=IBM+Plex+Mono&amp;family=Instrument+Serif&amp;display=swap');
+text{font-family:'IBM Plex Sans',Helvetica,Arial,sans-serif;fill:#1A1A1A}
+.disp{font-family:'Instrument Serif',Georgia,serif}.mono{font-family:'IBM Plex Mono',Menlo,monospace}
+.o{stroke:#1A1A1A;stroke-width:.35;fill:none}.t{stroke:#1A1A1A;stroke-width:.18;fill:none}
+.hd{stroke:#1A1A1A;stroke-width:.18;fill:none;stroke-dasharray:1.2 .8}
+.c{stroke:#1A1A1A;stroke-width:.13;fill:none;stroke-dasharray:4 .8 .6 .8}
+.d{stroke:#1A1A1A;stroke-width:.13;fill:none}
+.cut{stroke:#1A1A1A;stroke-width:.35;fill:url(#h)}.cut2{stroke:#1A1A1A;stroke-width:.35;fill:url(#h2)}
+.bis{fill:#F5E3D7;stroke:#7A3410;stroke-width:.15}
+.bish{fill:#FBF1EA;stroke:#7A3410;stroke-width:.15;stroke-dasharray:.8 .5}
+.pipe{fill:#8A857C;stroke:#1A1A1A;stroke-width:.2}
+.g{fill:#5A5752}.w{fill:#fff}
+</style>
+<defs>
+<pattern id="h" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<line x1="0" y1="0" x2="0" y2="1.2" stroke="#1A1A1A" stroke-width=".12"/></pattern>
+<pattern id="h2" width="1" height="1" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+<line x1="0" y1="0" x2="0" y2="1" stroke="#1A1A1A" stroke-width=".12"/></pattern>
+</defs>
+<rect width="420" height="297" fill="#fff"/>
+<text x="20" y="28" font-size="3.0">EXPLODED VIEW</text>
+<polygon points="41.53,193.32 46.2,193.32 46.2,80.94 41.53,80.94" class="o w"/>
+<polygon points="41.53,80.94 46.2,80.94 65.48,69.81 60.81,69.81" class="o w"/>
+<polygon points="46.2,193.32 65.48,182.19 65.48,69.81 46.2,80.94" class="o w"/>
+<polygon points="43.23,189.72 43.23,177.84 44.5,177.84 44.5,189.72" class="bis"/>
+<polygon points="43.23,171.06 43.23,159.18 44.5,159.18 44.5,171.06" class="bis"/>
+<polygon points="43.23,152.4 43.23,140.52 44.5,140.52 44.5,152.4" class="bis"/>
+<polygon points="43.23,133.74 43.23,121.86 44.5,121.86 44.5,133.74" class="bis"/>
+<polygon points="43.23,115.08 43.23,103.2 44.5,103.2 44.5,115.08" class="bis"/>
+<polygon points="43.23,96.42 43.23,84.54 44.5,84.54 44.5,96.42" class="bis"/>
+<polygon points="47.76,190.72 52.9,187.75 52.9,186.48 47.76,189.45" class="bis"/>
+<polygon points="47.76,83.01 52.9,80.04 52.9,78.76 47.76,81.73" class="bis"/>
+<polygon points="53.27,187.54 58.41,184.57 58.41,183.3 53.27,186.27" class="bis"/>
+<polygon points="53.27,79.83 58.41,76.86 58.41,75.58 53.27,78.55" class="bis"/>
+<polygon points="58.77,184.36 63.92,181.39 63.92,180.12 58.77,183.09" class="bis"/>
+<polygon points="58.77,76.64 63.92,73.68 63.92,72.4 58.77,75.37" class="bis"/>
+<polygon points="117.37,168.19 179.29,168.19 179.29,65.99 117.37,65.99" class="o w"/>
+<polygon points="117.37,65.99 179.29,65.99 181.31,64.82 119.39,64.82" class="o w"/>
+<polygon points="179.29,168.19 181.31,167.03 181.31,64.82 179.29,65.99" class="o w"/>
+<circle cx="144.09" cy="85.5" r="1.27" class="o"/>
+<clipPath id="c4314644672"><circle cx="144.09" cy="85.5" r="1.27"/></clipPath>
+<circle cx="146.11" cy="84.33" r="1.27" class="t" clip-path="url(#c4314644672)"/>
+<circle cx="152.57" cy="85.5" r="1.27" class="o"/>
+<clipPath id="c4314644736"><circle cx="152.57" cy="85.5" r="1.27"/></clipPath>
+<circle cx="154.59" cy="84.33" r="1.27" class="t" clip-path="url(#c4314644736)"/>
+<polygon points="79.55,179.8 82.73,179.8 82.73,76.75 79.55,76.75" class="o w"/>
+<polygon points="79.55,76.75 82.73,76.75 84.57,75.69 81.39,75.69" class="o w"/>
+<polygon points="82.73,179.8 84.57,178.74 84.57,75.69 82.73,76.75" class="o w"/>
+<polygon points="100.76,197.83 157.16,197.83 157.16,194.65 100.76,194.65" class="o w"/>
+<polygon points="100.76,194.65 157.16,194.65 159,193.59 102.59,193.59" class="o w"/>
+<polygon points="157.16,197.83 159,196.77 159,193.59 157.16,194.65" class="o w"/>
+<polygon points="82.24,225.13 145.01,225.13 145.01,220.46 82.24,220.46" class="o w"/>
+<polygon points="82.24,220.46 145.01,220.46 164.29,209.33 101.52,209.33" class="o w"/>
+<polygon points="145.01,225.13 164.29,213.99 164.29,209.33 145.01,220.46" class="o w"/>
+<polygon points="86.48,223.43 98.36,223.43 98.36,222.16 86.48,222.16" class="bis"/>
+<polygon points="107.69,223.43 119.56,223.43 119.56,222.16 107.69,222.16" class="bis"/>
+<polygon points="128.89,223.43 140.77,223.43 140.77,222.16 128.89,222.16" class="bis"/>
+<polygon points="146.57,222.53 151.71,219.56 151.71,218.29 146.57,221.26" class="bis"/>
+<polygon points="152.08,219.35 157.22,216.38 157.22,215.11 152.08,218.08" class="bis"/>
+<polygon points="157.59,216.17 162.73,213.2 162.73,211.93 157.59,214.9" class="bis"/>
+<polygon points="100.76,61.91 157.16,61.91 157.16,58.73 100.76,58.73" class="o w"/>
+<polygon points="100.76,58.73 157.16,58.73 159,57.67 102.59,57.67" class="o w"/>
+<polygon points="157.16,61.91 159,60.85 159,57.67 157.16,58.73" class="o w"/>
+<polygon points="175.18,179.8 178.36,179.8 178.36,76.75 175.18,76.75" class="o w"/>
+<polygon points="175.18,76.75 178.36,76.75 180.2,75.69 177.02,75.69" class="o w"/>
+<polygon points="178.36,179.8 180.2,178.74 180.2,75.69 178.36,76.75" class="o w"/>
+<polygon points="82.24,53.8 145.01,53.8 145.01,49.13 82.24,49.13" class="o w"/>
+<polygon points="82.24,49.13 145.01,49.13 164.29,38 101.52,38" class="o w"/>
+<polygon points="145.01,53.8 164.29,42.66 164.29,38 145.01,49.13" class="o w"/>
+<polygon points="86.48,52.1 98.36,52.1 98.36,50.83 86.48,50.83" class="bis"/>
+<polygon points="107.69,52.1 119.56,52.1 119.56,50.83 107.69,50.83" class="bis"/>
+<polygon points="128.89,52.1 140.77,52.1 140.77,50.83 128.89,50.83" class="bis"/>
+<polygon points="146.57,51.2 151.71,48.23 151.71,46.96 146.57,49.93" class="bis"/>
+<polygon points="152.08,48.02 157.22,45.05 157.22,43.78 152.08,46.75" class="bis"/>
+<polygon points="157.59,44.84 162.73,41.87 162.73,40.6 157.59,43.57" class="bis"/>
+<polygon points="181.05,193.32 185.72,193.32 185.72,80.94 181.05,80.94" class="o w"/>
+<polygon points="181.05,80.94 185.72,80.94 205,69.81 200.34,69.81" class="o w"/>
+<polygon points="185.72,193.32 205,182.19 205,69.81 185.72,80.94" class="o w"/>
+<polygon points="182.75,189.72 182.75,177.84 184.02,177.84 184.02,189.72" class="bis"/>
+<polygon points="182.75,171.06 182.75,159.18 184.02,159.18 184.02,171.06" class="bis"/>
+<polygon points="182.75,152.4 182.75,140.52 184.02,140.52 184.02,152.4" class="bis"/>
+<polygon points="182.75,133.74 182.75,121.86 184.02,121.86 184.02,133.74" class="bis"/>
+<polygon points="182.75,115.08 182.75,103.2 184.02,103.2 184.02,115.08" class="bis"/>
+<polygon points="182.75,96.42 182.75,84.54 184.02,84.54 184.02,96.42" class="bis"/>
+<polygon points="48.01,210.39 120.11,210.39 120.11,98.01 48.01,98.01" class="o w"/>
+<polygon points="48.01,98.01 120.11,98.01 122.13,96.84 50.03,96.84" class="o w"/>
+<polygon points="120.11,210.39 122.13,209.22 122.13,96.84 120.11,98.01" class="o w"/>
+<circle cx="84.06" cy="122.39" r="9.97" class="o"/>
+<clipPath id="c4314644800"><circle cx="84.06" cy="122.39" r="9.97"/></clipPath>
+<circle cx="86.08" cy="121.23" r="9.97" class="t" clip-path="url(#c4314644800)"/>
+<circle cx="84.06" cy="178.58" r="7.42" class="o"/>
+<clipPath id="c4314644672"><circle cx="84.06" cy="178.58" r="7.42"/></clipPath>
+<circle cx="86.08" cy="177.42" r="7.42" class="t" clip-path="url(#c4314644672)"/>
+<polygon points="20,238.06 83.61,238.06 83.61,174.45 20,174.45" class="o w"/>
+<polygon points="20,174.45 83.61,174.45 85.63,173.28 22.02,173.28" class="o w"/>
+<polygon points="83.61,238.06 85.63,236.89 85.63,173.28 83.61,174.45" class="o w"/>
+<circle cx="51.81" cy="206.25" r="7.42" class="o"/>
+<clipPath id="c4314644736"><circle cx="51.81" cy="206.25" r="7.42"/></clipPath>
+<circle cx="53.83" cy="205.09" r="7.42" class="t" clip-path="url(#c4314644736)"/>
+<text x="20" y="268" font-size="1.7" style="fill:#5A5752">Not to scale. Doubler, front and back pulled forward/back; sides, top and bottom pulled out; cleats pulled in. Biscuit slots shown on the visible faces.</text>
+<text x="215" y="28" font-size="3.0">ASSEMBLY</text>
+<text x="215" y="35" font-size="1.9">1</text>
+<text x="220" y="35" font-size="1.9">Cut and check.</text>
+<text x="245" y="35" font-size="1.9">Cut all panels from one 2000 × 1000 board (cutting plan in the build guide).</text>
+<text x="245" y="38.6" font-size="1.9">The front sets the box square — check its diagonals.</text>
+<text x="215" y="43.4" font-size="1.9">2</text>
+<text x="220" y="43.4" font-size="1.9">Holes.</text>
+<text x="245" y="43.4" font-size="1.9">Ø94 and Ø70 in the front, Ø70 in the doubler, Ø12 and 16 × Ø4.5 in the back.</text>
+<text x="215" y="48.2" font-size="1.9">3</text>
+<text x="220" y="48.2" font-size="1.9">Seal.</text>
+<text x="245" y="48.2" font-size="1.9">Two coats of thinned lacquer on all inside faces before assembly — OSB is porous.</text>
+<text x="215" y="53" font-size="1.9">4</text>
+<text x="220" y="53" font-size="1.9">Cleats.</text>
+<text x="245" y="53" font-size="1.9">Glue to sides, top and bottom, cleat face 23 mm from the rear edge. Jig: back panel</text>
+<text x="245" y="56.6" font-size="1.9">on the rear edges, 22 mm offcuts + 1 mm card underneath as spacers.</text>
+<text x="215" y="61.4" font-size="1.9">5</text>
+<text x="220" y="61.4" font-size="1.9">Biscuit slots.</text>
+<text x="245" y="61.4" font-size="1.9">30 per cabinet, size 20 (sheet 2). Reference the joiner from the face, not the</text>
+<text x="245" y="65" font-size="1.9">fence; check every slot for voids, shift it 20 mm if hollow. No sealer in the slots.</text>
+<text x="215" y="69.8" font-size="1.9">6</text>
+<text x="220" y="69.8" font-size="1.9">Carcass.</text>
+<text x="245" y="69.8" font-size="1.9">Size the cut edges with thin PVA, let it tack, then glue sides, top and bottom with</text>
+<text x="245" y="73.4" font-size="1.9">biscuits, strap-clamped. A back dry-fitted on wax paper holds it square.</text>
+<text x="215" y="78.2" font-size="1.9">7</text>
+<text x="220" y="78.2" font-size="1.9">Front.</text>
+<text x="245" y="78.2" font-size="1.9">Glue the front on with its 18 biscuits — ratchet strap and cauls across the front.</text>
+<text x="215" y="83" font-size="1.9">8</text>
+<text x="220" y="83" font-size="1.9">Doubler.</text>
+<text x="245" y="83" font-size="1.9">Flush with the bottom edge, 20 mm in from each side; a Ø70 offcut through both</text>
+<text x="245" y="86.6" font-size="1.9">port holes locates it.</text>
+<text x="215" y="91.4" font-size="1.9">9</text>
+<text x="220" y="91.4" font-size="1.9">Seal and tube.</text>
+<text x="245" y="91.4" font-size="1.9">Glue fillet or acrylic in every inside corner. Tube 151 mm with 20 mm flaps,</text>
+<text x="245" y="95" font-size="1.9">butted against the inside of the front, four flaps screwed (3.5 × 12), joint sealed.</text>
+<text x="215" y="99.8" font-size="1.9">10</text>
+<text x="220" y="99.8" font-size="1.9">Finish.</text>
+<text x="245" y="99.8" font-size="1.9">Sand 80 then 120 only — the resin-rich chips sand harder than the binder.</text>
+<text x="245" y="103.4" font-size="1.9">Then 2–3 coats of clear water-based lacquer.</text>
+<text x="215" y="108.2" font-size="1.9">11</text>
+<text x="220" y="108.2" font-size="1.9">Inserts.</text>
+<text x="245" y="108.2" font-size="1.9">Clamp the back on, drill through its holes into the cleats, set the M4 inserts.</text>
+<text x="215" y="113" font-size="1.9">12</text>
+<text x="220" y="113" font-size="1.9">Close.</text>
+<text x="245" y="113" font-size="1.9">Gasket on the cleats, damping, wire driver and terminals, screw the back on.</text>
+<text x="215" y="123.8" font-size="3.0">HARDWARE  (pair)</text>
+<text x="215" y="130.8" font-size="1.9">2</text>
+<text x="245" y="130.8" font-size="1.9">Aiyima 4″ full-range driver, 8 Ω (plan: Fostex FE103NV2)</text>
+<text x="215" y="134.4" font-size="1.9">2 × 151 mm</text>
+<text x="245" y="134.4" font-size="1.9">HT pipe DN75 (75 o.d. / ≈ 71 i.d.)</text>
+<text x="215" y="138" font-size="1.9">60</text>
+<text x="245" y="138" font-size="1.9">biscuits, size 20 — carcass, no screws</text>
+<text x="215" y="141.6" font-size="1.9">32</text>
+<text x="245" y="141.6" font-size="1.9">M4 threaded inserts, for hardwood</text>
+<text x="215" y="145.2" font-size="1.9">32</text>
+<text x="245" y="145.2" font-size="1.9">M4 × 30 pan head screws + washers</text>
+<text x="215" y="148.8" font-size="1.9">8</text>
+<text x="245" y="148.8" font-size="1.9">screws 3.5 × 12 (tube flaps)</text>
+<text x="215" y="152.4" font-size="1.9">≈ 3.1 m</text>
+<text x="245" y="152.4" font-size="1.9">beech strip 15 × 20 (cleats)</text>
+<text x="215" y="156" font-size="1.9">≈ 3.5 m</text>
+<text x="245" y="156" font-size="1.9">foam gasket tape 3 × 10 mm</text>
+<text x="215" y="159.6" font-size="1.9">2 pairs</text>
+<text x="245" y="159.6" font-size="1.9">speaker terminals for Ø12 hole</text>
+<text x="215" y="163.2" font-size="1.9"></text>
+<text x="245" y="163.2" font-size="1.9">sheep's wool fleece ≈ 10 mm + 2 × 50 g polyester fill</text>
+<text x="215" y="166.8" font-size="1.9"></text>
+<text x="245" y="166.8" font-size="1.9">PVA glue, clear lacquer, acrylic sealant, wire</text>
+<text x="215" y="176.4" font-size="3.0">BEFORE YOU PLAY</text>
+<text x="215" y="183.4" font-size="1.9">The Aiyima 4″ is rated 25 W; the plan's FE103NV2 only 5 W.</text>
+<text x="215" y="187" font-size="1.9">Port 175 mm ≈ 48 Hz: bass flat to ≈ 55 Hz (near field), −3 dB at 47 Hz.</text>
+<text x="215" y="190.6" font-size="1.9">With a DSP, set a protective high-pass at ≈ 0.75 × Fb (36 Hz).</text>
+<text x="215" y="194.2" font-size="1.9">Start at a low level — below the port tuning the cone is unloaded.</text>
+<rect x="10" y="10" width="400" height="277" class="o"/>
+<rect x="283" y="252" width="127" height="35" class="o"/>
+<text x="286" y="260.5" font-size="6.2" class="disp">Le Petit</text>
+<text x="407" y="257" font-size="1.7" text-anchor="end" class="mono">1704 Audio Labs</text>
+<text x="310" y="260.5" font-size="2.4">after Jean Hiraga</text>
+<text x="286" y="265.5" font-size="1.8">L'Audiophile no. 29 (1983) · hole positions after R. Berchtold (2022)</text>
+<text x="286" y="269.5" font-size="1.8">22 mm OSB · biscuits (size 20) + wood glue, no screws · removable back</text>
+<text x="286" y="275" font-size="2.5">Assembly and hardware</text>
+<line x1="283" y1="277" x2="410" y2="277" class="t"/>
+<line x1="355" y1="277" x2="355" y2="287" class="t"/>
+<line x1="385" y1="277" x2="385" y2="287" class="t"/>
+<text x="286" y="283" font-size="1.7">All dimensions in mm · Rev. as built · 13.10.2026</text>
+<text x="358" y="283" font-size="1.7">Scale n.t.s. @ A3</text>
+<text x="388" y="283" font-size="1.7">Sheet 3 / 3</text>
+</svg>

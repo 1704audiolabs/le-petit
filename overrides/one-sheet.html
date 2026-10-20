@@ -1,0 +1,35 @@
+{#- The one-sheet: a standalone A4 page (no site chrome), content from docs/one-sheet.md, styles in
+    docs/assets/one-sheet.css. Front matter: title, description, sheet_label (aria label of the sheet). -#}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.meta.title }} · {{ config.site_name }}</title>
+<meta name="description" content="{{ page.meta.description }}">
+<link rel="canonical" href="{{ page.canonical_url }}">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="{{ config.site_name }}">
+<meta property="og:title" content="{{ page.meta.title }} · {{ config.site_name }}">
+<meta property="og:description" content="{{ page.meta.description }}">
+<meta property="og:url" content="{{ page.canonical_url }}">
+<meta property="og:image" content="{{ config.site_url }}assets/social-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ 'assets/images/favicon.png' | url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="{{ 'assets/one-sheet.css' | url }}">
+</head>
+<body>
+<nav class="tools" aria-label="One-sheet">
+  <a href="{{ nav.homepage.url | url }}">← {{ config.site_name }}</a>
+  <button type="button" onclick="window.print()">Print or save as PDF (A4)</button>
+</nav>
+<div class="wrap">
+<article class="sheet" aria-label="{{ page.meta.sheet_label }}">
+{{ page.content }}
+</article>
+</div>
+</body>
+</html>

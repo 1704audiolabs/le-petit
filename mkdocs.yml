@@ -1,0 +1,54 @@
+site_name: Le Petit
+site_description: Jean Hiraga's Le Petit from one OSB sheet with the Aiyima 4″ driver — tuned by measurement.
+site_url: https://1704audiolabs.github.io/le-petit/
+repo_url: https://github.com/1704audiolabs/le-petit
+repo_name: le-petit
+copyright: Docs, drawings, photos and data CC BY-SA 4.0 · plan scripts MIT · Le Petit design by Jean Hiraga (1983)
+docs_dir: docs
+theme:
+  name: material
+  custom_dir: overrides
+  # 1704 Audio Labs: one light scheme on warm paper; colours come from docs/assets/brand.css
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  features:
+    - navigation.sections
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - content.tables.sort
+    - navigation.top
+nav:
+  - Principles: https://1704audiolabs.github.io/
+  - Home: index.md
+  - One-sheet: one-sheet.md
+  - Build:
+      - Build guide: 01-build.md
+      - Building plan: building-plan.md
+  - Results:
+      - "Step 1 — Damping": 05-step-1-damping.md
+      - "Step 2 — Port tube": 06-step-2-port-tube.md
+      - Aiyima vs. FE103NV2: 07-aiyima-vs-fe103.md
+      - Lessons: 08-lessons.md
+  - How it was measured:
+      - Measurement rig: 02-measurement-rig.md
+      - Impedance jig: 03-impedance-jig.md
+      - Method: 04-method.md
+      - Raw data: data/README.md
+  - Credits & license: CREDITS.md
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+extra_css:
+  - assets/brand.css

@@ -1,0 +1,647 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&amp;family=IBM+Plex+Mono&amp;family=Instrument+Serif&amp;display=swap');
+text{font-family:'IBM Plex Sans',Helvetica,Arial,sans-serif;fill:#1A1A1A}
+.disp{font-family:'Instrument Serif',Georgia,serif}.mono{font-family:'IBM Plex Mono',Menlo,monospace}
+.o{stroke:#1A1A1A;stroke-width:.35;fill:none}.t{stroke:#1A1A1A;stroke-width:.18;fill:none}
+.hd{stroke:#1A1A1A;stroke-width:.18;fill:none;stroke-dasharray:1.2 .8}
+.c{stroke:#1A1A1A;stroke-width:.13;fill:none;stroke-dasharray:4 .8 .6 .8}
+.d{stroke:#1A1A1A;stroke-width:.13;fill:none}
+.cut{stroke:#1A1A1A;stroke-width:.35;fill:url(#h)}.cut2{stroke:#1A1A1A;stroke-width:.35;fill:url(#h2)}
+.bis{fill:#F5E3D7;stroke:#7A3410;stroke-width:.15}
+.bish{fill:#FBF1EA;stroke:#7A3410;stroke-width:.15;stroke-dasharray:.8 .5}
+.pipe{fill:#8A857C;stroke:#1A1A1A;stroke-width:.2}
+.g{fill:#5A5752}.w{fill:#fff}
+</style>
+<defs>
+<pattern id="h" width="1.2" height="1.2" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+<line x1="0" y1="0" x2="0" y2="1.2" stroke="#1A1A1A" stroke-width=".12"/></pattern>
+<pattern id="h2" width="1" height="1" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+<line x1="0" y1="0" x2="0" y2="1" stroke="#1A1A1A" stroke-width=".12"/></pattern>
+</defs>
+<rect width="420" height="297" fill="#fff"/>
+<text x="25" y="28" font-size="3.0">FRONT</text>
+<text x="25" y="32.5" font-size="1.8" style="fill:#3A3732">530 × 340 × 22 · 1 per box · seen from inside · 18 biscuit slots in the face</text>
+<rect x="33" y="46" width="68" height="106" class="o"/>
+<rect x="37" y="92" width="60" height="60" class="hd"/>
+<text x="38.2" y="94.8" font-size="1.6" style="fill:#5A5752">doubler (outside)</text>
+<circle cx="67" cy="69" r="9.4" class="o"/>
+<circle cx="67" cy="122" r="7" class="o"/>
+<line x1="67" y1="44.4" x2="67" y2="153.6" class="c"/>
+<line x1="55" y1="69" x2="79" y2="69" class="c"/>
+<line x1="57" y1="122" x2="77" y2="122" class="c"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(35.2,55) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(98.8,55) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(35.2,72.6) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(98.8,72.6) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(35.2,90.2) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(98.8,90.2) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(35.2,107.8) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(98.8,107.8) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(35.2,125.4) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(98.8,125.4) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(35.2,143) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(98.8,143) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(47,48.2)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(47,149.8)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(67,48.2)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(67,149.8)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(87,48.2)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(87,149.8)" class="bis"/>
+<line x1="107" y1="44.8" x2="107" y2="70.2" class="d"/>
+<line x1="106.2" y1="46.8" x2="107.8" y2="45.2" class="o"/>
+<line x1="101.8" y1="46" x2="108" y2="46" class="d"/>
+<line x1="106.2" y1="69.8" x2="107.8" y2="68.2" class="o"/>
+<line x1="101.8" y1="69" x2="108" y2="69" class="d"/>
+<text x="106.3" y="57.5" font-size="1.8" text-anchor="middle" transform="rotate(-90 106.3 57.5)">115</text>
+<line x1="107" y1="67.8" x2="107" y2="123.2" class="d"/>
+<line x1="106.2" y1="69.8" x2="107.8" y2="68.2" class="o"/>
+<line x1="101.8" y1="69" x2="108" y2="69" class="d"/>
+<line x1="106.2" y1="122.8" x2="107.8" y2="121.2" class="o"/>
+<line x1="101.8" y1="122" x2="108" y2="122" class="d"/>
+<text x="106.3" y="95.5" font-size="1.8" text-anchor="middle" transform="rotate(-90 106.3 95.5)">265</text>
+<line x1="107" y1="120.8" x2="107" y2="153.2" class="d"/>
+<line x1="106.2" y1="122.8" x2="107.8" y2="121.2" class="o"/>
+<line x1="101.8" y1="122" x2="108" y2="122" class="d"/>
+<line x1="106.2" y1="152.8" x2="107.8" y2="151.2" class="o"/>
+<line x1="101.8" y1="152" x2="108" y2="152" class="d"/>
+<text x="106.3" y="137" font-size="1.8" text-anchor="middle" transform="rotate(-90 106.3 137)">150</text>
+<line x1="113" y1="44.8" x2="113" y2="153.2" class="d"/>
+<line x1="112.2" y1="46.8" x2="113.8" y2="45.2" class="o"/>
+<line x1="101.8" y1="46" x2="114" y2="46" class="d"/>
+<line x1="112.2" y1="152.8" x2="113.8" y2="151.2" class="o"/>
+<line x1="101.8" y1="152" x2="114" y2="152" class="d"/>
+<text x="112.3" y="99" font-size="1.8" text-anchor="middle" transform="rotate(-90 112.3 99)">530</text>
+<line x1="31.8" y1="158" x2="68.2" y2="158" class="d"/>
+<line x1="32.2" y1="158.8" x2="33.8" y2="157.2" class="o"/>
+<line x1="33" y1="152.8" x2="33" y2="159" class="d"/>
+<line x1="66.2" y1="158.8" x2="67.8" y2="157.2" class="o"/>
+<line x1="67" y1="152.8" x2="67" y2="159" class="d"/>
+<text x="50" y="157.3" font-size="1.8" text-anchor="middle">170</text>
+<line x1="65.8" y1="158" x2="102.2" y2="158" class="d"/>
+<line x1="66.2" y1="158.8" x2="67.8" y2="157.2" class="o"/>
+<line x1="67" y1="152.8" x2="67" y2="159" class="d"/>
+<line x1="100.2" y1="158.8" x2="101.8" y2="157.2" class="o"/>
+<line x1="101" y1="152.8" x2="101" y2="159" class="d"/>
+<text x="84" y="157.3" font-size="1.8" text-anchor="middle">170</text>
+<line x1="31.8" y1="164" x2="102.2" y2="164" class="d"/>
+<line x1="32.2" y1="164.8" x2="33.8" y2="163.2" class="o"/>
+<line x1="33" y1="152.8" x2="33" y2="165" class="d"/>
+<line x1="100.2" y1="164.8" x2="101.8" y2="163.2" class="o"/>
+<line x1="101" y1="152.8" x2="101" y2="165" class="d"/>
+<text x="67" y="163.3" font-size="1.8" text-anchor="middle">340</text>
+<line x1="27" y1="44.8" x2="27" y2="56.2" class="d"/>
+<line x1="26.2" y1="46.8" x2="27.8" y2="45.2" class="o"/>
+<line x1="32.2" y1="46" x2="26" y2="46" class="d"/>
+<line x1="26.2" y1="55.8" x2="27.8" y2="54.2" class="o"/>
+<line x1="32.2" y1="55" x2="26" y2="55" class="d"/>
+<text x="26.3" y="50.5" font-size="1.8" text-anchor="middle" transform="rotate(-90 26.3 50.5)">45</text>
+<line x1="27" y1="53.8" x2="27" y2="73.8" class="d"/>
+<line x1="26.2" y1="55.8" x2="27.8" y2="54.2" class="o"/>
+<line x1="32.2" y1="55" x2="26" y2="55" class="d"/>
+<line x1="26.2" y1="73.4" x2="27.8" y2="71.8" class="o"/>
+<line x1="32.2" y1="72.6" x2="26" y2="72.6" class="d"/>
+<text x="26.3" y="63.8" font-size="1.8" text-anchor="middle" transform="rotate(-90 26.3 63.8)">88</text>
+<line x1="27" y1="71.4" x2="27" y2="91.4" class="d"/>
+<line x1="26.2" y1="73.4" x2="27.8" y2="71.8" class="o"/>
+<line x1="32.2" y1="72.6" x2="26" y2="72.6" class="d"/>
+<line x1="26.2" y1="91" x2="27.8" y2="89.4" class="o"/>
+<line x1="32.2" y1="90.2" x2="26" y2="90.2" class="d"/>
+<text x="26.3" y="81.4" font-size="1.8" text-anchor="middle" transform="rotate(-90 26.3 81.4)">88</text>
+<line x1="27" y1="89" x2="27" y2="109" class="d"/>
+<line x1="26.2" y1="91" x2="27.8" y2="89.4" class="o"/>
+<line x1="32.2" y1="90.2" x2="26" y2="90.2" class="d"/>
+<line x1="26.2" y1="108.6" x2="27.8" y2="107" class="o"/>
+<line x1="32.2" y1="107.8" x2="26" y2="107.8" class="d"/>
+<text x="26.3" y="99" font-size="1.8" text-anchor="middle" transform="rotate(-90 26.3 99)">88</text>
+<line x1="27" y1="106.6" x2="27" y2="126.6" class="d"/>
+<line x1="26.2" y1="108.6" x2="27.8" y2="107" class="o"/>
+<line x1="32.2" y1="107.8" x2="26" y2="107.8" class="d"/>
+<line x1="26.2" y1="126.2" x2="27.8" y2="124.6" class="o"/>
+<line x1="32.2" y1="125.4" x2="26" y2="125.4" class="d"/>
+<text x="26.3" y="116.6" font-size="1.8" text-anchor="middle" transform="rotate(-90 26.3 116.6)">88</text>
+<line x1="27" y1="124.2" x2="27" y2="144.2" class="d"/>
+<line x1="26.2" y1="126.2" x2="27.8" y2="124.6" class="o"/>
+<line x1="32.2" y1="125.4" x2="26" y2="125.4" class="d"/>
+<line x1="26.2" y1="143.8" x2="27.8" y2="142.2" class="o"/>
+<line x1="32.2" y1="143" x2="26" y2="143" class="d"/>
+<text x="26.3" y="134.2" font-size="1.8" text-anchor="middle" transform="rotate(-90 26.3 134.2)">88</text>
+<line x1="27" y1="141.8" x2="27" y2="153.2" class="d"/>
+<line x1="26.2" y1="143.8" x2="27.8" y2="142.2" class="o"/>
+<line x1="32.2" y1="143" x2="26" y2="143" class="d"/>
+<line x1="26.2" y1="152.8" x2="27.8" y2="151.2" class="o"/>
+<line x1="32.2" y1="152" x2="26" y2="152" class="d"/>
+<text x="26.3" y="147.5" font-size="1.8" text-anchor="middle" transform="rotate(-90 26.3 147.5)">45</text>
+<line x1="31.8" y1="41" x2="48.2" y2="41" class="d"/>
+<line x1="32.2" y1="41.8" x2="33.8" y2="40.2" class="o"/>
+<line x1="33" y1="45.2" x2="33" y2="40" class="d"/>
+<line x1="46.2" y1="41.8" x2="47.8" y2="40.2" class="o"/>
+<line x1="47" y1="45.2" x2="47" y2="40" class="d"/>
+<text x="40" y="40.3" font-size="1.8" text-anchor="middle">70</text>
+<line x1="45.8" y1="41" x2="68.2" y2="41" class="d"/>
+<line x1="46.2" y1="41.8" x2="47.8" y2="40.2" class="o"/>
+<line x1="47" y1="45.2" x2="47" y2="40" class="d"/>
+<line x1="66.2" y1="41.8" x2="67.8" y2="40.2" class="o"/>
+<line x1="67" y1="45.2" x2="67" y2="40" class="d"/>
+<text x="57" y="40.3" font-size="1.8" text-anchor="middle">100</text>
+<line x1="65.8" y1="41" x2="88.2" y2="41" class="d"/>
+<line x1="66.2" y1="41.8" x2="67.8" y2="40.2" class="o"/>
+<line x1="67" y1="45.2" x2="67" y2="40" class="d"/>
+<line x1="86.2" y1="41.8" x2="87.8" y2="40.2" class="o"/>
+<line x1="87" y1="45.2" x2="87" y2="40" class="d"/>
+<text x="77" y="40.3" font-size="1.8" text-anchor="middle">100</text>
+<line x1="85.8" y1="41" x2="102.2" y2="41" class="d"/>
+<line x1="86.2" y1="41.8" x2="87.8" y2="40.2" class="o"/>
+<line x1="87" y1="45.2" x2="87" y2="40" class="d"/>
+<line x1="100.2" y1="41.8" x2="101.8" y2="40.2" class="o"/>
+<line x1="101" y1="45.2" x2="101" y2="40" class="d"/>
+<text x="94" y="40.3" font-size="1.8" text-anchor="middle">70</text>
+<line x1="60.4" y1="62.4" x2="47" y2="81" class="d"/>
+<circle cx="60.4" cy="62.4" r="0.25" class="g"/>
+<text x="46.2" y="81.6" font-size="1.9" text-anchor="end">Ø94</text>
+<line x1="62.4" y1="127" x2="49" y2="138" class="d"/>
+<circle cx="62.4" cy="127" r="0.25" class="g"/>
+<text x="48.2" y="138.6" font-size="1.9" text-anchor="end">Ø70</text>
+<text x="67" y="104" font-size="1.6" text-anchor="middle" style="fill:#5A5752">slots 11 from the edge</text>
+<text x="130" y="28" font-size="3.0">BACK</text>
+<text x="130" y="32.5" font-size="1.8" style="fill:#3A3732">482 × 292 × 22 · 1 per box · seen from behind</text>
+<rect x="140" y="48" width="58.4" height="96.4" class="o"/>
+<circle cx="151.2" cy="49.3" r="0.45" class="t"/>
+<line x1="150.2" y1="49.3" x2="152.2" y2="49.3" class="t"/>
+<line x1="151.2" y1="48.3" x2="151.2" y2="50.3" class="t"/>
+<circle cx="151.2" cy="143.1" r="0.45" class="t"/>
+<line x1="150.2" y1="143.1" x2="152.2" y2="143.1" class="t"/>
+<line x1="151.2" y1="142.1" x2="151.2" y2="144.1" class="t"/>
+<circle cx="169.2" cy="49.3" r="0.45" class="t"/>
+<line x1="168.2" y1="49.3" x2="170.2" y2="49.3" class="t"/>
+<line x1="169.2" y1="48.3" x2="169.2" y2="50.3" class="t"/>
+<circle cx="169.2" cy="143.1" r="0.45" class="t"/>
+<line x1="168.2" y1="143.1" x2="170.2" y2="143.1" class="t"/>
+<line x1="169.2" y1="142.1" x2="169.2" y2="144.1" class="t"/>
+<circle cx="187.2" cy="49.3" r="0.45" class="t"/>
+<line x1="186.2" y1="49.3" x2="188.2" y2="49.3" class="t"/>
+<line x1="187.2" y1="48.3" x2="187.2" y2="50.3" class="t"/>
+<circle cx="187.2" cy="143.1" r="0.45" class="t"/>
+<line x1="186.2" y1="143.1" x2="188.2" y2="143.1" class="t"/>
+<line x1="187.2" y1="142.1" x2="187.2" y2="144.1" class="t"/>
+<circle cx="141.3" cy="54.2" r="0.45" class="t"/>
+<line x1="140.3" y1="54.2" x2="142.3" y2="54.2" class="t"/>
+<line x1="141.3" y1="53.2" x2="141.3" y2="55.2" class="t"/>
+<circle cx="141.3" cy="75.2" r="0.45" class="t"/>
+<line x1="140.3" y1="75.2" x2="142.3" y2="75.2" class="t"/>
+<line x1="141.3" y1="74.2" x2="141.3" y2="76.2" class="t"/>
+<circle cx="141.3" cy="96.2" r="0.45" class="t"/>
+<line x1="140.3" y1="96.2" x2="142.3" y2="96.2" class="t"/>
+<line x1="141.3" y1="95.2" x2="141.3" y2="97.2" class="t"/>
+<circle cx="141.3" cy="117.2" r="0.45" class="t"/>
+<line x1="140.3" y1="117.2" x2="142.3" y2="117.2" class="t"/>
+<line x1="141.3" y1="116.2" x2="141.3" y2="118.2" class="t"/>
+<circle cx="141.3" cy="138.2" r="0.45" class="t"/>
+<line x1="140.3" y1="138.2" x2="142.3" y2="138.2" class="t"/>
+<line x1="141.3" y1="137.2" x2="141.3" y2="139.2" class="t"/>
+<circle cx="197.1" cy="54.2" r="0.45" class="t"/>
+<line x1="196.1" y1="54.2" x2="198.1" y2="54.2" class="t"/>
+<line x1="197.1" y1="53.2" x2="197.1" y2="55.2" class="t"/>
+<circle cx="197.1" cy="75.2" r="0.45" class="t"/>
+<line x1="196.1" y1="75.2" x2="198.1" y2="75.2" class="t"/>
+<line x1="197.1" y1="74.2" x2="197.1" y2="76.2" class="t"/>
+<circle cx="197.1" cy="96.2" r="0.45" class="t"/>
+<line x1="196.1" y1="96.2" x2="198.1" y2="96.2" class="t"/>
+<line x1="197.1" y1="95.2" x2="197.1" y2="97.2" class="t"/>
+<circle cx="197.1" cy="117.2" r="0.45" class="t"/>
+<line x1="196.1" y1="117.2" x2="198.1" y2="117.2" class="t"/>
+<line x1="197.1" y1="116.2" x2="197.1" y2="118.2" class="t"/>
+<circle cx="197.1" cy="138.2" r="0.45" class="t"/>
+<line x1="196.1" y1="138.2" x2="198.1" y2="138.2" class="t"/>
+<line x1="197.1" y1="137.2" x2="197.1" y2="139.2" class="t"/>
+<circle cx="165.2" cy="126" r="1.2" class="o"/>
+<circle cx="173.2" cy="126" r="1.2" class="o"/>
+<line x1="169.2" y1="46.4" x2="169.2" y2="146" class="c"/>
+<text x="144" y="56" font-size="1.8">16 × Ø4.5 through</text>
+<text x="144" y="59" font-size="1.8">2 × Ø12 terminals</text>
+<text x="144" y="62" font-size="1.8" style="fill:#5A5752">(no countersink)</text>
+<line x1="138.8" y1="150.4" x2="152.4" y2="150.4" class="d"/>
+<line x1="139.2" y1="151.2" x2="140.8" y2="149.6" class="o"/>
+<line x1="140" y1="145.2" x2="140" y2="151.4" class="d"/>
+<line x1="150.4" y1="151.2" x2="152" y2="149.6" class="o"/>
+<line x1="151.2" y1="145.2" x2="151.2" y2="151.4" class="d"/>
+<text x="145.6" y="149.7" font-size="1.8" text-anchor="middle">56</text>
+<line x1="150" y1="150.4" x2="170.4" y2="150.4" class="d"/>
+<line x1="150.4" y1="151.2" x2="152" y2="149.6" class="o"/>
+<line x1="151.2" y1="145.2" x2="151.2" y2="151.4" class="d"/>
+<line x1="168.4" y1="151.2" x2="170" y2="149.6" class="o"/>
+<line x1="169.2" y1="145.2" x2="169.2" y2="151.4" class="d"/>
+<text x="160.2" y="149.7" font-size="1.8" text-anchor="middle">90</text>
+<line x1="168" y1="150.4" x2="188.4" y2="150.4" class="d"/>
+<line x1="168.4" y1="151.2" x2="170" y2="149.6" class="o"/>
+<line x1="169.2" y1="145.2" x2="169.2" y2="151.4" class="d"/>
+<line x1="186.4" y1="151.2" x2="188" y2="149.6" class="o"/>
+<line x1="187.2" y1="145.2" x2="187.2" y2="151.4" class="d"/>
+<text x="178.2" y="149.7" font-size="1.8" text-anchor="middle">90</text>
+<line x1="186" y1="150.4" x2="199.6" y2="150.4" class="d"/>
+<line x1="186.4" y1="151.2" x2="188" y2="149.6" class="o"/>
+<line x1="187.2" y1="145.2" x2="187.2" y2="151.4" class="d"/>
+<line x1="197.6" y1="151.2" x2="199.2" y2="149.6" class="o"/>
+<line x1="198.4" y1="145.2" x2="198.4" y2="151.4" class="d"/>
+<text x="192.8" y="149.7" font-size="1.8" text-anchor="middle">56</text>
+<line x1="138.8" y1="156.4" x2="199.6" y2="156.4" class="d"/>
+<line x1="139.2" y1="157.2" x2="140.8" y2="155.6" class="o"/>
+<line x1="140" y1="145.2" x2="140" y2="157.4" class="d"/>
+<line x1="197.6" y1="157.2" x2="199.2" y2="155.6" class="o"/>
+<line x1="198.4" y1="145.2" x2="198.4" y2="157.4" class="d"/>
+<text x="169.2" y="155.7" font-size="1.8" text-anchor="middle">292</text>
+<line x1="204.4" y1="46.8" x2="204.4" y2="55.4" class="d"/>
+<line x1="203.6" y1="48.8" x2="205.2" y2="47.2" class="o"/>
+<line x1="199.2" y1="48" x2="205.4" y2="48" class="d"/>
+<line x1="203.6" y1="55" x2="205.2" y2="53.4" class="o"/>
+<line x1="199.2" y1="54.2" x2="205.4" y2="54.2" class="d"/>
+<text x="203.7" y="51.1" font-size="1.8" text-anchor="middle" transform="rotate(-90 203.7 51.1)">31</text>
+<line x1="204.4" y1="53" x2="204.4" y2="76.4" class="d"/>
+<line x1="203.6" y1="55" x2="205.2" y2="53.4" class="o"/>
+<line x1="199.2" y1="54.2" x2="205.4" y2="54.2" class="d"/>
+<line x1="203.6" y1="76" x2="205.2" y2="74.4" class="o"/>
+<line x1="199.2" y1="75.2" x2="205.4" y2="75.2" class="d"/>
+<text x="203.7" y="64.7" font-size="1.8" text-anchor="middle" transform="rotate(-90 203.7 64.7)">105</text>
+<line x1="204.4" y1="74" x2="204.4" y2="97.4" class="d"/>
+<line x1="203.6" y1="76" x2="205.2" y2="74.4" class="o"/>
+<line x1="199.2" y1="75.2" x2="205.4" y2="75.2" class="d"/>
+<line x1="203.6" y1="97" x2="205.2" y2="95.4" class="o"/>
+<line x1="199.2" y1="96.2" x2="205.4" y2="96.2" class="d"/>
+<text x="203.7" y="85.7" font-size="1.8" text-anchor="middle" transform="rotate(-90 203.7 85.7)">105</text>
+<line x1="204.4" y1="95" x2="204.4" y2="118.4" class="d"/>
+<line x1="203.6" y1="97" x2="205.2" y2="95.4" class="o"/>
+<line x1="199.2" y1="96.2" x2="205.4" y2="96.2" class="d"/>
+<line x1="203.6" y1="118" x2="205.2" y2="116.4" class="o"/>
+<line x1="199.2" y1="117.2" x2="205.4" y2="117.2" class="d"/>
+<text x="203.7" y="106.7" font-size="1.8" text-anchor="middle" transform="rotate(-90 203.7 106.7)">105</text>
+<line x1="204.4" y1="116" x2="204.4" y2="139.4" class="d"/>
+<line x1="203.6" y1="118" x2="205.2" y2="116.4" class="o"/>
+<line x1="199.2" y1="117.2" x2="205.4" y2="117.2" class="d"/>
+<line x1="203.6" y1="139" x2="205.2" y2="137.4" class="o"/>
+<line x1="199.2" y1="138.2" x2="205.4" y2="138.2" class="d"/>
+<text x="203.7" y="127.7" font-size="1.8" text-anchor="middle" transform="rotate(-90 203.7 127.7)">105</text>
+<line x1="204.4" y1="137" x2="204.4" y2="145.6" class="d"/>
+<line x1="203.6" y1="139" x2="205.2" y2="137.4" class="o"/>
+<line x1="199.2" y1="138.2" x2="205.4" y2="138.2" class="d"/>
+<line x1="203.6" y1="145.2" x2="205.2" y2="143.6" class="o"/>
+<line x1="199.2" y1="144.4" x2="205.4" y2="144.4" class="d"/>
+<text x="203.7" y="141.3" font-size="1.8" text-anchor="middle" transform="rotate(-90 203.7 141.3)">31</text>
+<line x1="210.4" y1="46.8" x2="210.4" y2="145.6" class="d"/>
+<line x1="209.6" y1="48.8" x2="211.2" y2="47.2" class="o"/>
+<line x1="199.2" y1="48" x2="211.4" y2="48" class="d"/>
+<line x1="209.6" y1="145.2" x2="211.2" y2="143.6" class="o"/>
+<line x1="199.2" y1="144.4" x2="211.4" y2="144.4" class="d"/>
+<text x="209.7" y="96.2" font-size="1.8" text-anchor="middle" transform="rotate(-90 209.7 96.2)">482</text>
+<line x1="195.9" y1="44" x2="199.6" y2="44" class="d"/>
+<line x1="196.3" y1="44.8" x2="197.9" y2="43.2" class="o"/>
+<line x1="197.1" y1="47.2" x2="197.1" y2="43" class="d"/>
+<line x1="197.6" y1="44.8" x2="199.2" y2="43.2" class="o"/>
+<line x1="198.4" y1="47.2" x2="198.4" y2="43" class="d"/>
+<text x="197.75" y="43.3" font-size="1.8" text-anchor="middle">6.5</text>
+<line x1="134" y1="124.8" x2="134" y2="145.6" class="d"/>
+<line x1="133.2" y1="126.8" x2="134.8" y2="125.2" class="o"/>
+<line x1="163.2" y1="126" x2="133" y2="126" class="d"/>
+<line x1="133.2" y1="145.2" x2="134.8" y2="143.6" class="o"/>
+<line x1="163.2" y1="144.4" x2="133" y2="144.4" class="d"/>
+<text x="133.3" y="135.2" font-size="1.8" text-anchor="middle" transform="rotate(-90 133.3 135.2)">92</text>
+<line x1="164" y1="120" x2="174.4" y2="120" class="d"/>
+<line x1="164.4" y1="120.8" x2="166" y2="119.2" class="o"/>
+<line x1="165.2" y1="124" x2="165.2" y2="119" class="d"/>
+<line x1="172.4" y1="120.8" x2="174" y2="119.2" class="o"/>
+<line x1="173.2" y1="124" x2="173.2" y2="119" class="d"/>
+<text x="169.2" y="119.3" font-size="1.8" text-anchor="middle">40</text>
+<text x="232" y="28" font-size="3.0">SIDE</text>
+<text x="232" y="32.5" font-size="1.8" style="fill:#3A3732">530 × 210 × 22 · 2 per box · inner face</text>
+<rect x="244" y="48" width="42" height="106" class="o"/>
+<rect x="277.4" y="52.4" width="4" height="97.2" class="hd"/>
+<text x="280" y="101" font-size="1.6" text-anchor="middle" transform="rotate(-90 280 101)" style="fill:#5A5752">cleat</text>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(244,57) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(244,74.6) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(244,92.2) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(244,109.8) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(244,127.4) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(244,145) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(253,50.2)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(253,151.8)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(265,50.2)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(265,151.8)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(277,50.2)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(277,151.8)" class="bis"/>
+<text x="244.8" y="160" font-size="1.6" style="fill:#5A5752">front edge</text>
+<line x1="238" y1="46.8" x2="238" y2="58.2" class="d"/>
+<line x1="237.2" y1="48.8" x2="238.8" y2="47.2" class="o"/>
+<line x1="243.2" y1="48" x2="237" y2="48" class="d"/>
+<line x1="237.2" y1="57.8" x2="238.8" y2="56.2" class="o"/>
+<line x1="243.2" y1="57" x2="237" y2="57" class="d"/>
+<text x="237.3" y="52.5" font-size="1.8" text-anchor="middle" transform="rotate(-90 237.3 52.5)">45</text>
+<line x1="238" y1="55.8" x2="238" y2="75.8" class="d"/>
+<line x1="237.2" y1="57.8" x2="238.8" y2="56.2" class="o"/>
+<line x1="243.2" y1="57" x2="237" y2="57" class="d"/>
+<line x1="237.2" y1="75.4" x2="238.8" y2="73.8" class="o"/>
+<line x1="243.2" y1="74.6" x2="237" y2="74.6" class="d"/>
+<text x="237.3" y="65.8" font-size="1.8" text-anchor="middle" transform="rotate(-90 237.3 65.8)">88</text>
+<line x1="238" y1="73.4" x2="238" y2="93.4" class="d"/>
+<line x1="237.2" y1="75.4" x2="238.8" y2="73.8" class="o"/>
+<line x1="243.2" y1="74.6" x2="237" y2="74.6" class="d"/>
+<line x1="237.2" y1="93" x2="238.8" y2="91.4" class="o"/>
+<line x1="243.2" y1="92.2" x2="237" y2="92.2" class="d"/>
+<text x="237.3" y="83.4" font-size="1.8" text-anchor="middle" transform="rotate(-90 237.3 83.4)">88</text>
+<line x1="238" y1="91" x2="238" y2="111" class="d"/>
+<line x1="237.2" y1="93" x2="238.8" y2="91.4" class="o"/>
+<line x1="243.2" y1="92.2" x2="237" y2="92.2" class="d"/>
+<line x1="237.2" y1="110.6" x2="238.8" y2="109" class="o"/>
+<line x1="243.2" y1="109.8" x2="237" y2="109.8" class="d"/>
+<text x="237.3" y="101" font-size="1.8" text-anchor="middle" transform="rotate(-90 237.3 101)">88</text>
+<line x1="238" y1="108.6" x2="238" y2="128.6" class="d"/>
+<line x1="237.2" y1="110.6" x2="238.8" y2="109" class="o"/>
+<line x1="243.2" y1="109.8" x2="237" y2="109.8" class="d"/>
+<line x1="237.2" y1="128.2" x2="238.8" y2="126.6" class="o"/>
+<line x1="243.2" y1="127.4" x2="237" y2="127.4" class="d"/>
+<text x="237.3" y="118.6" font-size="1.8" text-anchor="middle" transform="rotate(-90 237.3 118.6)">88</text>
+<line x1="238" y1="126.2" x2="238" y2="146.2" class="d"/>
+<line x1="237.2" y1="128.2" x2="238.8" y2="126.6" class="o"/>
+<line x1="243.2" y1="127.4" x2="237" y2="127.4" class="d"/>
+<line x1="237.2" y1="145.8" x2="238.8" y2="144.2" class="o"/>
+<line x1="243.2" y1="145" x2="237" y2="145" class="d"/>
+<text x="237.3" y="136.2" font-size="1.8" text-anchor="middle" transform="rotate(-90 237.3 136.2)">88</text>
+<line x1="238" y1="143.8" x2="238" y2="155.2" class="d"/>
+<line x1="237.2" y1="145.8" x2="238.8" y2="144.2" class="o"/>
+<line x1="243.2" y1="145" x2="237" y2="145" class="d"/>
+<line x1="237.2" y1="154.8" x2="238.8" y2="153.2" class="o"/>
+<line x1="243.2" y1="154" x2="237" y2="154" class="d"/>
+<text x="237.3" y="149.5" font-size="1.8" text-anchor="middle" transform="rotate(-90 237.3 149.5)">45</text>
+<line x1="242.8" y1="44" x2="254.2" y2="44" class="d"/>
+<line x1="243.2" y1="44.8" x2="244.8" y2="43.2" class="o"/>
+<line x1="244" y1="47.2" x2="244" y2="43" class="d"/>
+<line x1="252.2" y1="44.8" x2="253.8" y2="43.2" class="o"/>
+<line x1="253" y1="47.2" x2="253" y2="43" class="d"/>
+<text x="248.5" y="43.3" font-size="1.8" text-anchor="middle">45</text>
+<line x1="251.8" y1="44" x2="266.2" y2="44" class="d"/>
+<line x1="252.2" y1="44.8" x2="253.8" y2="43.2" class="o"/>
+<line x1="253" y1="47.2" x2="253" y2="43" class="d"/>
+<line x1="264.2" y1="44.8" x2="265.8" y2="43.2" class="o"/>
+<line x1="265" y1="47.2" x2="265" y2="43" class="d"/>
+<text x="259" y="43.3" font-size="1.8" text-anchor="middle">60</text>
+<line x1="263.8" y1="44" x2="278.2" y2="44" class="d"/>
+<line x1="264.2" y1="44.8" x2="265.8" y2="43.2" class="o"/>
+<line x1="265" y1="47.2" x2="265" y2="43" class="d"/>
+<line x1="276.2" y1="44.8" x2="277.8" y2="43.2" class="o"/>
+<line x1="277" y1="47.2" x2="277" y2="43" class="d"/>
+<text x="271" y="43.3" font-size="1.8" text-anchor="middle">60</text>
+<line x1="275.8" y1="44" x2="287.2" y2="44" class="d"/>
+<line x1="276.2" y1="44.8" x2="277.8" y2="43.2" class="o"/>
+<line x1="277" y1="47.2" x2="277" y2="43" class="d"/>
+<line x1="285.2" y1="44.8" x2="286.8" y2="43.2" class="o"/>
+<line x1="286" y1="47.2" x2="286" y2="43" class="d"/>
+<text x="281.5" y="43.3" font-size="1.8" text-anchor="middle">45</text>
+<line x1="292" y1="46.8" x2="292" y2="155.2" class="d"/>
+<line x1="291.2" y1="48.8" x2="292.8" y2="47.2" class="o"/>
+<line x1="286.8" y1="48" x2="293" y2="48" class="d"/>
+<line x1="291.2" y1="154.8" x2="292.8" y2="153.2" class="o"/>
+<line x1="286.8" y1="154" x2="293" y2="154" class="d"/>
+<text x="291.3" y="101" font-size="1.8" text-anchor="middle" transform="rotate(-90 291.3 101)">530</text>
+<line x1="280.2" y1="160" x2="287.2" y2="160" class="d"/>
+<line x1="280.6" y1="160.8" x2="282.2" y2="159.2" class="o"/>
+<line x1="281.4" y1="154.8" x2="281.4" y2="161" class="d"/>
+<line x1="285.2" y1="160.8" x2="286.8" y2="159.2" class="o"/>
+<line x1="286" y1="154.8" x2="286" y2="161" class="d"/>
+<text x="283.7" y="159.3" font-size="1.8" text-anchor="middle">23</text>
+<line x1="242.8" y1="166" x2="287.2" y2="166" class="d"/>
+<line x1="243.2" y1="166.8" x2="244.8" y2="165.2" class="o"/>
+<line x1="244" y1="154.8" x2="244" y2="167" class="d"/>
+<line x1="285.2" y1="166.8" x2="286.8" y2="165.2" class="o"/>
+<line x1="286" y1="154.8" x2="286" y2="167" class="d"/>
+<text x="265" y="165.3" font-size="1.8" text-anchor="middle">210</text>
+<text x="25" y="180" font-size="3.0">TOP / BOTTOM</text>
+<text x="25" y="184.5" font-size="1.8" style="fill:#3A3732">296 × 210 × 22 · 2 per box · inner face, front edge at the bottom</text>
+<rect x="33" y="196" width="59.2" height="42" class="o"/>
+<rect x="36" y="200.6" width="53.2" height="4" class="hd"/>
+<text x="62.6" y="203.4" font-size="1.6" text-anchor="middle" style="fill:#5A5752">cleat</text>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(42.6,238)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(62.6,238)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(82.6,238)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(33,229) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(92.2,229) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(33,217) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(92.2,217) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(33,205) rotate(90)" class="bis"/>
+<path d="M-5.6,0 A16.18,16.18 0 0 1 5.6,0 A16.18,16.18 0 0 1 -5.6,0Z" transform="translate(92.2,205) rotate(90)" class="bis"/>
+<text x="62.6" y="236" font-size="1.6" text-anchor="middle" style="fill:#5A5752">front edge</text>
+<line x1="31.8" y1="244" x2="43.8" y2="244" class="d"/>
+<line x1="32.2" y1="244.8" x2="33.8" y2="243.2" class="o"/>
+<line x1="33" y1="238.8" x2="33" y2="245" class="d"/>
+<line x1="41.8" y1="244.8" x2="43.4" y2="243.2" class="o"/>
+<line x1="42.6" y1="238.8" x2="42.6" y2="245" class="d"/>
+<text x="37.8" y="243.3" font-size="1.8" text-anchor="middle">48</text>
+<line x1="41.4" y1="244" x2="63.8" y2="244" class="d"/>
+<line x1="41.8" y1="244.8" x2="43.4" y2="243.2" class="o"/>
+<line x1="42.6" y1="238.8" x2="42.6" y2="245" class="d"/>
+<line x1="61.8" y1="244.8" x2="63.4" y2="243.2" class="o"/>
+<line x1="62.6" y1="238.8" x2="62.6" y2="245" class="d"/>
+<text x="52.6" y="243.3" font-size="1.8" text-anchor="middle">100</text>
+<line x1="61.4" y1="244" x2="83.8" y2="244" class="d"/>
+<line x1="61.8" y1="244.8" x2="63.4" y2="243.2" class="o"/>
+<line x1="62.6" y1="238.8" x2="62.6" y2="245" class="d"/>
+<line x1="81.8" y1="244.8" x2="83.4" y2="243.2" class="o"/>
+<line x1="82.6" y1="238.8" x2="82.6" y2="245" class="d"/>
+<text x="72.6" y="243.3" font-size="1.8" text-anchor="middle">100</text>
+<line x1="81.4" y1="244" x2="93.4" y2="244" class="d"/>
+<line x1="81.8" y1="244.8" x2="83.4" y2="243.2" class="o"/>
+<line x1="82.6" y1="238.8" x2="82.6" y2="245" class="d"/>
+<line x1="91.4" y1="244.8" x2="93" y2="243.2" class="o"/>
+<line x1="92.2" y1="238.8" x2="92.2" y2="245" class="d"/>
+<text x="87.4" y="243.3" font-size="1.8" text-anchor="middle">48</text>
+<line x1="31.8" y1="250" x2="93.4" y2="250" class="d"/>
+<line x1="32.2" y1="250.8" x2="33.8" y2="249.2" class="o"/>
+<line x1="33" y1="238.8" x2="33" y2="251" class="d"/>
+<line x1="91.4" y1="250.8" x2="93" y2="249.2" class="o"/>
+<line x1="92.2" y1="238.8" x2="92.2" y2="251" class="d"/>
+<text x="62.6" y="249.3" font-size="1.8" text-anchor="middle">296</text>
+<line x1="98.2" y1="194.8" x2="98.2" y2="206.2" class="d"/>
+<line x1="97.4" y1="196.8" x2="99" y2="195.2" class="o"/>
+<line x1="93" y1="196" x2="99.2" y2="196" class="d"/>
+<line x1="97.4" y1="205.8" x2="99" y2="204.2" class="o"/>
+<line x1="93" y1="205" x2="99.2" y2="205" class="d"/>
+<text x="97.5" y="200.5" font-size="1.8" text-anchor="middle" transform="rotate(-90 97.5 200.5)">45</text>
+<line x1="98.2" y1="203.8" x2="98.2" y2="218.2" class="d"/>
+<line x1="97.4" y1="205.8" x2="99" y2="204.2" class="o"/>
+<line x1="93" y1="205" x2="99.2" y2="205" class="d"/>
+<line x1="97.4" y1="217.8" x2="99" y2="216.2" class="o"/>
+<line x1="93" y1="217" x2="99.2" y2="217" class="d"/>
+<text x="97.5" y="211" font-size="1.8" text-anchor="middle" transform="rotate(-90 97.5 211)">60</text>
+<line x1="98.2" y1="215.8" x2="98.2" y2="230.2" class="d"/>
+<line x1="97.4" y1="217.8" x2="99" y2="216.2" class="o"/>
+<line x1="93" y1="217" x2="99.2" y2="217" class="d"/>
+<line x1="97.4" y1="229.8" x2="99" y2="228.2" class="o"/>
+<line x1="93" y1="229" x2="99.2" y2="229" class="d"/>
+<text x="97.5" y="223" font-size="1.8" text-anchor="middle" transform="rotate(-90 97.5 223)">60</text>
+<line x1="98.2" y1="227.8" x2="98.2" y2="239.2" class="d"/>
+<line x1="97.4" y1="229.8" x2="99" y2="228.2" class="o"/>
+<line x1="93" y1="229" x2="99.2" y2="229" class="d"/>
+<line x1="97.4" y1="238.8" x2="99" y2="237.2" class="o"/>
+<line x1="93" y1="238" x2="99.2" y2="238" class="d"/>
+<text x="97.5" y="233.5" font-size="1.8" text-anchor="middle" transform="rotate(-90 97.5 233.5)">45</text>
+<line x1="104.2" y1="194.8" x2="104.2" y2="239.2" class="d"/>
+<line x1="103.4" y1="196.8" x2="105" y2="195.2" class="o"/>
+<line x1="93" y1="196" x2="105.2" y2="196" class="d"/>
+<line x1="103.4" y1="238.8" x2="105" y2="237.2" class="o"/>
+<line x1="93" y1="238" x2="105.2" y2="238" class="d"/>
+<text x="103.5" y="217" font-size="1.8" text-anchor="middle" transform="rotate(-90 103.5 217)">210</text>
+<line x1="28" y1="194.8" x2="28" y2="201.8" class="d"/>
+<line x1="27.2" y1="196.8" x2="28.8" y2="195.2" class="o"/>
+<line x1="32.2" y1="196" x2="27" y2="196" class="d"/>
+<line x1="27.2" y1="201.4" x2="28.8" y2="199.8" class="o"/>
+<line x1="32.2" y1="200.6" x2="27" y2="200.6" class="d"/>
+<text x="27.3" y="198.3" font-size="1.8" text-anchor="middle" transform="rotate(-90 27.3 198.3)">23</text>
+<text x="130" y="180" font-size="3.0">DOUBLER</text>
+<text x="130" y="184.5" font-size="1.8" style="fill:#3A3732">300 × 300 × 22 · 1 per box · glued on the outside</text>
+<rect x="140" y="196" width="60" height="60" class="o"/>
+<circle cx="170" cy="226" r="7" class="o"/>
+<line x1="170" y1="194.4" x2="170" y2="257.6" class="c"/>
+<line x1="138.4" y1="226" x2="201.6" y2="226" class="c"/>
+<line x1="175" y1="221" x2="178" y2="208" class="d"/>
+<circle cx="175" cy="221" r="0.25" class="g"/>
+<text x="178.8" y="208.6" font-size="1.9">Ø70 (as front)</text>
+<line x1="138.8" y1="262" x2="171.2" y2="262" class="d"/>
+<line x1="139.2" y1="262.8" x2="140.8" y2="261.2" class="o"/>
+<line x1="140" y1="256.8" x2="140" y2="263" class="d"/>
+<line x1="169.2" y1="262.8" x2="170.8" y2="261.2" class="o"/>
+<line x1="170" y1="256.8" x2="170" y2="263" class="d"/>
+<text x="155" y="261.3" font-size="1.8" text-anchor="middle">150</text>
+<line x1="168.8" y1="262" x2="201.2" y2="262" class="d"/>
+<line x1="169.2" y1="262.8" x2="170.8" y2="261.2" class="o"/>
+<line x1="170" y1="256.8" x2="170" y2="263" class="d"/>
+<line x1="199.2" y1="262.8" x2="200.8" y2="261.2" class="o"/>
+<line x1="200" y1="256.8" x2="200" y2="263" class="d"/>
+<text x="185" y="261.3" font-size="1.8" text-anchor="middle">150</text>
+<line x1="206" y1="194.8" x2="206" y2="227.2" class="d"/>
+<line x1="205.2" y1="196.8" x2="206.8" y2="195.2" class="o"/>
+<line x1="200.8" y1="196" x2="207" y2="196" class="d"/>
+<line x1="205.2" y1="226.8" x2="206.8" y2="225.2" class="o"/>
+<line x1="200.8" y1="226" x2="207" y2="226" class="d"/>
+<text x="205.3" y="211" font-size="1.8" text-anchor="middle" transform="rotate(-90 205.3 211)">150</text>
+<line x1="206" y1="224.8" x2="206" y2="257.2" class="d"/>
+<line x1="205.2" y1="226.8" x2="206.8" y2="225.2" class="o"/>
+<line x1="200.8" y1="226" x2="207" y2="226" class="d"/>
+<line x1="205.2" y1="256.8" x2="206.8" y2="255.2" class="o"/>
+<line x1="200.8" y1="256" x2="207" y2="256" class="d"/>
+<text x="205.3" y="241" font-size="1.8" text-anchor="middle" transform="rotate(-90 205.3 241)">150</text>
+<text x="222" y="180" font-size="3.0">CLEATS</text>
+<text x="222" y="184.5" font-size="1.8" style="fill:#3A3732">beech 15 × 20 · per box</text>
+<rect x="222" y="192" width="97.2" height="3" class="o"/>
+<text x="222" y="199" font-size="1.8">2 × 486 (sides)</text>
+<rect x="222" y="204" width="53.2" height="3" class="o"/>
+<text x="222" y="211" font-size="1.8">2 × 266 (top, bottom)</text>
+<text x="222" y="220" font-size="1.6" style="fill:#5A5752">section 1:2</text>
+<rect x="222" y="222" width="7.5" height="10" class="cut2"/>
+<line x1="220.8" y1="236" x2="230.7" y2="236" class="d"/>
+<line x1="221.2" y1="236.8" x2="222.8" y2="235.2" class="o"/>
+<line x1="222" y1="232.8" x2="222" y2="237" class="d"/>
+<line x1="228.7" y1="236.8" x2="230.3" y2="235.2" class="o"/>
+<line x1="229.5" y1="232.8" x2="229.5" y2="237" class="d"/>
+<text x="225.75" y="235.3" font-size="1.8" text-anchor="middle">15</text>
+<line x1="233" y1="220.8" x2="233" y2="233.2" class="d"/>
+<line x1="232.2" y1="222.8" x2="233.8" y2="221.2" class="o"/>
+<line x1="230.3" y1="222" x2="234" y2="222" class="d"/>
+<line x1="232.2" y1="232.8" x2="233.8" y2="231.2" class="o"/>
+<line x1="230.3" y1="232" x2="234" y2="232" class="d"/>
+<text x="232.3" y="227" font-size="1.8" text-anchor="middle" transform="rotate(-90 232.3 227)">20</text>
+<text x="300" y="28" font-size="3.0">CUT LIST</text>
+<text x="300" y="35" font-size="1.9">Part</text>
+<text x="334" y="35" font-size="1.9">Size (mm)</text>
+<text x="385" y="35" font-size="1.9">Box</text>
+<text x="398" y="35" font-size="1.9">Pair</text>
+<line x1="300" y1="36.5" x2="406" y2="36.5" class="o"/>
+<text x="300" y="39.6" font-size="1.9">Front</text>
+<text x="334" y="39.6" font-size="1.9">530 × 340 × 22</text>
+<text x="385" y="39.6" font-size="1.9">1</text>
+<text x="398" y="39.6" font-size="1.9">2</text>
+<line x1="300" y1="41.1" x2="406" y2="41.1" class="t"/>
+<text x="300" y="44.2" font-size="1.9">Side</text>
+<text x="334" y="44.2" font-size="1.9">530 × 210 × 22</text>
+<text x="385" y="44.2" font-size="1.9">2</text>
+<text x="398" y="44.2" font-size="1.9">4</text>
+<line x1="300" y1="45.7" x2="406" y2="45.7" class="t"/>
+<text x="300" y="48.8" font-size="1.9">Top / bottom</text>
+<text x="334" y="48.8" font-size="1.9">296 × 210 × 22</text>
+<text x="385" y="48.8" font-size="1.9">2</text>
+<text x="398" y="48.8" font-size="1.9">4</text>
+<line x1="300" y1="50.3" x2="406" y2="50.3" class="t"/>
+<text x="300" y="53.4" font-size="1.9">Back</text>
+<text x="334" y="53.4" font-size="1.9">482 × 292 × 22</text>
+<text x="385" y="53.4" font-size="1.9">1</text>
+<text x="398" y="53.4" font-size="1.9">2</text>
+<line x1="300" y1="54.9" x2="406" y2="54.9" class="t"/>
+<text x="300" y="58" font-size="1.9">Doubler</text>
+<text x="334" y="58" font-size="1.9">300 × 300 × 22</text>
+<text x="385" y="58" font-size="1.9">1</text>
+<text x="398" y="58" font-size="1.9">2</text>
+<line x1="300" y1="59.5" x2="406" y2="59.5" class="t"/>
+<text x="300" y="62.6" font-size="1.9">Cleat, beech</text>
+<text x="334" y="62.6" font-size="1.9">486 × 15 × 20</text>
+<text x="385" y="62.6" font-size="1.9">2</text>
+<text x="398" y="62.6" font-size="1.9">4</text>
+<line x1="300" y1="64.1" x2="406" y2="64.1" class="t"/>
+<text x="300" y="67.2" font-size="1.9">Cleat, beech</text>
+<text x="334" y="67.2" font-size="1.9">266 × 15 × 20</text>
+<text x="385" y="67.2" font-size="1.9">2</text>
+<text x="398" y="67.2" font-size="1.9">4</text>
+<line x1="300" y1="68.7" x2="406" y2="68.7" class="t"/>
+<text x="300" y="71.8" font-size="1.9">Biscuits</text>
+<text x="334" y="71.8" font-size="1.9">size 20</text>
+<text x="385" y="71.8" font-size="1.9">30</text>
+<text x="398" y="71.8" font-size="1.9">60</text>
+<line x1="300" y1="73.3" x2="406" y2="73.3" class="t"/>
+<text x="300" y="80" font-size="1.8">OSB for the pair: 1.52 m² net — one 2000 × 1000 board.</text>
+<text x="300" y="83.5" font-size="1.8">Cleats: cut to fit the finished opening.</text>
+<text x="300" y="96" font-size="3.0">HOLES</text>
+<text x="300" y="103" font-size="1.9">Driver</text>
+<text x="322" y="103" font-size="1.9">Ø94</text>
+<text x="344" y="103" font-size="1.9">front, centred, 115 below top</text>
+<text x="300" y="107.2" font-size="1.9">Port</text>
+<text x="322" y="107.2" font-size="1.9">Ø70</text>
+<text x="344" y="107.2" font-size="1.9">front, centred, 150 above bottom</text>
+<text x="300" y="111.4" font-size="1.9">Port</text>
+<text x="322" y="111.4" font-size="1.9">Ø70</text>
+<text x="344" y="111.4" font-size="1.9">doubler, centre</text>
+<text x="300" y="115.6" font-size="1.9">Terminals</text>
+<text x="322" y="115.6" font-size="1.9">2 × Ø12</text>
+<text x="344" y="115.6" font-size="1.9">back, 40 apart, 92 up</text>
+<text x="300" y="119.8" font-size="1.9">Screws</text>
+<text x="322" y="119.8" font-size="1.9">16 × Ø4.5</text>
+<text x="344" y="119.8" font-size="1.9">back, see layout</text>
+<text x="300" y="126" font-size="1.8">Chamfer the inside edge of the driver cutout.</text>
+<text x="300" y="129.5" font-size="1.8">Check Ø94 against your actual driver first.</text>
+<text x="300" y="140" font-size="3.0">CARCASS JOINTS — BISCUITS + GLUE</text>
+<text x="300" y="146" font-size="1.85">No screws: the glue carries the joint, the biscuits locate it.</text>
+<text x="300" y="149.7" font-size="1.85">Size 20 (56 × 23 × 4), slots centred in the 22 mm thickness.</text>
+<text x="300" y="153.4" font-size="1.85">Front onto sides: 6 per 530 edge at 45 / 133 / 221 / 309 / 397 / 485.</text>
+<text x="300" y="157.1" font-size="1.85">Front onto top and bottom: 3 per edge at 70 / 170 / 270</text>
+<text x="300" y="160.8" font-size="1.85">(from the front's edge = 48 / 148 / 248 on the top/bottom).</text>
+<text x="300" y="164.5" font-size="1.85">Sides onto top/bottom ends: 3 per edge at 45 / 105 / 165 from the front.</text>
+<text x="300" y="168.2" font-size="1.85">30 per cabinet, 60 per pair.</text>
+<text x="300" y="171.9" font-size="1.85">OSB: reference the joiner from the face, not the fence. Check every slot</text>
+<text x="300" y="175.6" font-size="1.85">for voids, shift it 20 mm if hollow. Keep sealer out of the slots.</text>
+<text x="300" y="179.3" font-size="1.85">Clamp with a ratchet strap and cauls.</text>
+<text x="300" y="226" font-size="2.4">LEGEND</text>
+<path d="M-5.6,0 A13.67,13.67 0 0 1 5.6,0 A13.67,13.67 0 0 1 -5.6,0Z" transform="translate(304,231)" class="bis"/>
+<text x="311" y="231.7" font-size="1.8">biscuit slot, size 20 (56 × 23 × 4), centred in the 22 mm edge</text>
+<path d="M-5.6,0 A13.67,13.67 0 0 1 5.6,0 A13.67,13.67 0 0 1 -5.6,0Z" transform="translate(304,236)" class="bish"/>
+<text x="311" y="236.7" font-size="1.8">biscuit, hidden</text>
+<rect x="301" y="239.5" width="6" height="3" class="cut"/>
+<text x="311" y="241.7" font-size="1.8">cut section (OSB; beech cleats hatched the other way)</text>
+<rect x="10" y="10" width="400" height="277" class="o"/>
+<rect x="283" y="252" width="127" height="35" class="o"/>
+<text x="286" y="260.5" font-size="6.2" class="disp">Le Petit</text>
+<text x="407" y="257" font-size="1.7" text-anchor="end" class="mono">1704 Audio Labs</text>
+<text x="310" y="260.5" font-size="2.4">after Jean Hiraga</text>
+<text x="286" y="265.5" font-size="1.8">L'Audiophile no. 29 (1983) · hole positions after R. Berchtold (2022)</text>
+<text x="286" y="269.5" font-size="1.8">22 mm OSB · biscuits (size 20) + wood glue, no screws · removable back</text>
+<text x="286" y="275" font-size="2.5">Panels and cut list</text>
+<line x1="283" y1="277" x2="410" y2="277" class="t"/>
+<line x1="355" y1="277" x2="355" y2="287" class="t"/>
+<line x1="385" y1="277" x2="385" y2="287" class="t"/>
+<text x="286" y="283" font-size="1.7">All dimensions in mm · Rev. as built · 13.10.2026</text>
+<text x="358" y="283" font-size="1.7">Scale 1:5 @ A3</text>
+<text x="388" y="283" font-size="1.7">Sheet 2 / 3</text>
+</svg>
