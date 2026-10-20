@@ -109,6 +109,14 @@ class Sheet:
                 f'<rect width="{W}" height="{H}" fill="#fff"/>\n' + "\n".join(s.e) + "\n</svg>\n")
 
 
+def logo(s, x, y, h):
+    """The 1704 Audio Labs logo (docs/assets/logo.svg), h mm high, top-left at x, y; frame and rule drawn at ≈ .2 mm."""
+    src = (OUT.parent / "assets" / "logo.svg").read_text()
+    body = src.split("</title>", 1)[1].rsplit("</svg>", 1)[0]
+    body = body.replace('stroke="#1A1A1A"/>', f'stroke="#1A1A1A" stroke-width="{.2 * 90 / h:.2f}"/>')
+    s.raw(f'<g transform="translate({f(x)} {f(y)}) scale({h / 90:.5f})">{body}</g>')
+
+
 class View:
     """Panel coordinates (mm, u right, v down) -> paper at scale k."""
 
@@ -155,7 +163,7 @@ def frame(s, title, scale, n):
     x0, y0 = 283, 252
     s.rect(x0, y0, 127, 35, "o")
     s.text(x0 + 3, y0 + 8.5, "Le Petit", 6.2, cls="disp")
-    s.text(x0 + 124, y0 + 5, "1704 Audio Labs", 1.7, "end", cls="mono")
+    logo(s, x0 + 124 - 6.5 * 239.69 / 90, y0 + 1.6, 6.5)
     s.text(x0 + 27, y0 + 8.5, "after Jean Hiraga", 2.4)
     s.text(x0 + 3, y0 + 13.5, "L'Audiophile no. 29 (1983) · hole positions after R. Berchtold (2022)", 1.8)
     s.text(x0 + 3, y0 + 17.5, "22 mm OSB · biscuits (size 20) + wood glue, no screws · removable back", 1.8)

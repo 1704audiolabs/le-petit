@@ -4,7 +4,7 @@ Four legs, two side bars and a middle bar, 6 mm bright round steel, silver-solde
 into M6 inserts glued into the box bottom, 22 mm from the outside faces (296 x 188 on the axes).
 Run: python make_stand_plan.py  ->  stand-plan.svg
 """
-from make_building_plan import OUT, Sheet, View, heading, f
+from make_building_plan import OUT, Sheet, View, f, heading, logo
 
 DATE = "20.10.2026"
 BW, BH, BD, DBL = 340, 530, 232, 22        # box (W x H x D), doubler in front
@@ -19,7 +19,7 @@ def frame(s):
     x0, y0 = 283, 252
     s.rect(x0, y0, 127, 35, "o")
     s.text(x0 + 3, y0 + 8.5, "Le Petit", 6.2, cls="disp")
-    s.text(x0 + 124, y0 + 5, "1704 Audio Labs", 1.7, "end", cls="mono")
+    logo(s, x0 + 124 - 6.5 * 239.69 / 90, y0 + 1.6, 6.5)
     s.text(x0 + 27, y0 + 8.5, "stand", 2.4)
     s.text(x0 + 3, y0 + 13.5, "Ø6 bright round steel, silver-soldered · legs into M6 inserts in the box bottom", 1.8)
     s.text(x0 + 3, y0 + 17.5, "300 high: driver centre 715 above the floor, 830 overall", 1.8)

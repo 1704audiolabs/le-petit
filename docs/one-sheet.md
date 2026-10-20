@@ -5,7 +5,7 @@ description: Le Petit on one A4 page — flat within ±1 dB from 55 to 150 Hz, f
 sheet_label: One-sheet — Le Petit
 ---
 
-<header class="mast"><span class="wordmark">1704 Audio Labs</span><span>01 · Le Petit</span><span>October 2026</span></header>
+<header class="mast"><img class="logo" src="../assets/logo.svg" alt="1704 Audio Labs"><span>01 · Le Petit</span><span>October 2026</span></header>
 <section class="cover" aria-label="Le Petit">
 <img src="../assets/photos/pair-front.jpg" alt="The finished Le Petit pair in OSB">
 <div class="cover__body">

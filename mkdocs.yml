@@ -8,6 +8,8 @@ docs_dir: docs
 theme:
   name: material
   custom_dir: overrides
+  logo: assets/tag-paper.svg
+  favicon: assets/favicon.svg
   # 1704 Audio Labs: one light scheme on warm paper; colours come from docs/assets/brand.css
   palette:
     scheme: default
