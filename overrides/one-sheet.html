@@ -31,5 +31,28 @@
 {{ page.content }}
 </article>
 </div>
+<script>
+/* Fill the A4 page: grow the content block (--fill) until the sheet's content just fits its height. */
+(function () {
+  var sheet = document.querySelector('.sheet'), block = document.querySelector('.applied');
+  if (!sheet || !block) return;
+  function fits() { return sheet.scrollHeight <= sheet.clientHeight + 0.5; }
+  function fit() {
+    if (matchMedia('(max-width: 700px)').matches) { block.style.removeProperty('--fill'); return; }
+    var lo = 1, hi = 1.6;
+    block.style.setProperty('--fill', lo);
+    for (var i = 0; i < 18; i++) {
+      var mid = (lo + hi) / 2; block.style.setProperty('--fill', mid);
+      if (fits()) lo = mid; else hi = mid;
+    }
+    block.style.setProperty('--fill', lo);
+  }
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () {
+    var imgs = [].slice.call(document.images).map(function (im) { return im.complete ? 0 : new Promise(function (r) { im.onload = im.onerror = r; }); });
+    Promise.all(imgs).then(fit);
+  });
+  addEventListener('resize', fit); addEventListener('beforeprint', fit);
+})();
+</script>
 </body>
 </html>
